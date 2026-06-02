@@ -1,0 +1,107 @@
+2026-03-26 12:25:45 [INF] Secure API Gateway starting on 
+2026-03-26 12:25:45 [INF] User profile is available. Using 'C:\Users\asus\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-03-26 12:25:45 [INF] Creating key {51c3ac86-7078-4748-8c2b-1bc12336c4d8} with creation date 2026-03-26 10:25:45Z, activation date 2026-03-26 10:25:45Z, and expiration date 2026-06-24 10:25:45Z.
+2026-03-26 12:25:45 [INF] Writing data to file 'C:\Users\asus\AppData\Local\ASP.NET\DataProtection-Keys\key-51c3ac86-7078-4748-8c2b-1bc12336c4d8.xml'.
+2026-03-26 12:25:45 [INF] Now listening on: http://localhost:5094
+2026-03-26 12:25:45 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-26 12:25:45 [INF] Hosting environment: Development
+2026-03-26 12:25:45 [INF] Content root path: C:\Users\asus\source\repos\SecureAPIGatway\SecureAPIGateway
+2026-03-26 12:25:54 [INF] Request starting HTTP/1.1 GET http://localhost:5094/ - null null
+2026-03-26 12:25:54 [WRN] [Gateway] ::1 GET / → 404 (34.4823ms)
+2026-03-26 12:25:54 [INF] Request finished HTTP/1.1 GET http://localhost:5094/ - 404 0 null 64.356ms
+2026-03-26 12:25:54 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5094/, Response status code: 404
+2026-03-26 12:25:55 [INF] Request starting HTTP/1.1 GET http://localhost:5094/ - null null
+2026-03-26 12:25:55 [WRN] [Gateway] ::1 GET / → 404 (1.887ms)
+2026-03-26 12:25:55 [INF] Request finished HTTP/1.1 GET http://localhost:5094/ - 404 0 null 5.0238ms
+2026-03-26 12:25:55 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5094/, Response status code: 404
+2026-03-26 12:25:57 [INF] Request starting HTTP/1.1 GET http://localhost:5094/ - null null
+2026-03-26 12:25:57 [WRN] [Gateway] ::1 GET / → 404 (1.7771ms)
+2026-03-26 12:25:57 [INF] Request finished HTTP/1.1 GET http://localhost:5094/ - 404 0 null 5.6334ms
+2026-03-26 12:25:57 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5094/, Response status code: 404
+2026-03-26 12:25:59 [INF] Request starting HTTP/1.1 GET http://localhost:5094/ - null null
+2026-03-26 12:25:59 [WRN] [Gateway] ::1 GET / → 404 (0.2682ms)
+2026-03-26 12:25:59 [INF] Request finished HTTP/1.1 GET http://localhost:5094/ - 404 0 null 3.479ms
+2026-03-26 12:25:59 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5094/, Response status code: 404
+2026-03-26 12:30:23 [INF] Request starting HTTP/1.1 GET http://localhost:5094/ - null null
+2026-03-26 12:30:23 [WRN] [Gateway] ::1 GET / → 404 (0.1356ms)
+2026-03-26 12:30:23 [INF] Request finished HTTP/1.1 GET http://localhost:5094/ - 404 0 null 4.6202ms
+2026-03-26 12:30:23 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5094/, Response status code: 404
+2026-03-26 12:30:26 [INF] Request starting HTTP/1.1 GET http://localhost:5094/ - null null
+2026-03-26 12:30:26 [WRN] [Gateway] ::1 GET / → 404 (0.1753ms)
+2026-03-26 12:30:26 [INF] Request finished HTTP/1.1 GET http://localhost:5094/ - 404 0 null 5.5017ms
+2026-03-26 12:30:26 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5094/, Response status code: 404
+2026-03-26 12:38:21 [INF] Secure API Gateway starting on 
+2026-03-26 12:38:21 [INF] User profile is available. Using 'C:\Users\asus\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-03-26 12:38:22 [INF] Now listening on: http://localhost:5094
+2026-03-26 12:38:22 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-26 12:38:22 [INF] Hosting environment: Development
+2026-03-26 12:38:22 [INF] Content root path: C:\Users\asus\source\repos\SecureAPIGatway\SecureAPIGateway
+2026-03-26 12:39:05 [INF] Request starting HTTP/1.1 GET http://localhost:5094/swagger - null null
+2026-03-26 12:39:05 [WRN] [Gateway] ::1 GET /swagger → 404 (29.1135ms)
+2026-03-26 12:39:05 [INF] Request finished HTTP/1.1 GET http://localhost:5094/swagger - 404 0 null 58.0036ms
+2026-03-26 12:39:05 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5094/swagger, Response status code: 404
+2026-03-26 12:39:08 [INF] Request starting HTTP/1.1 GET http://localhost:5094/swagger - null null
+2026-03-26 12:39:08 [WRN] [Gateway] ::1 GET /swagger → 404 (1.6794ms)
+2026-03-26 12:39:08 [INF] Request finished HTTP/1.1 GET http://localhost:5094/swagger - 404 0 null 7.9738ms
+2026-03-26 12:39:08 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5094/swagger, Response status code: 404
+2026-03-26 12:39:09 [INF] Request starting HTTP/1.1 GET http://localhost:5094/swagger - null null
+2026-03-26 12:39:09 [WRN] [Gateway] ::1 GET /swagger → 404 (1.8893ms)
+2026-03-26 12:39:09 [INF] Request finished HTTP/1.1 GET http://localhost:5094/swagger - 404 0 null 5.9754ms
+2026-03-26 12:39:09 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5094/swagger, Response status code: 404
+2026-03-26 12:47:23 [INF] Secure API Gateway running. Swagger: http://localhost:5000/swagger
+2026-03-26 12:47:23 [INF] User profile is available. Using 'C:\Users\asus\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-03-26 12:47:23 [INF] Now listening on: http://localhost:5094
+2026-03-26 12:47:23 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-26 12:47:23 [INF] Hosting environment: Development
+2026-03-26 12:47:23 [INF] Content root path: C:\Users\asus\source\repos\SecureAPIGatway\SecureAPIGateway
+2026-03-26 12:47:28 [INF] Request starting HTTP/1.1 GET http://localhost:5094/swagger - null null
+2026-03-26 12:47:28 [INF] Request finished HTTP/1.1 GET http://localhost:5094/swagger - 301 0 null 24.7572ms
+2026-03-26 12:47:28 [INF] Request starting HTTP/1.1 GET http://localhost:5094/swagger/index.html - null null
+2026-03-26 12:47:28 [INF] Request finished HTTP/1.1 GET http://localhost:5094/swagger/index.html - 200 null text/html;charset=utf-8 47.9726ms
+2026-03-26 12:47:28 [INF] Request starting HTTP/1.1 GET http://localhost:5094/swagger/index.css - null null
+2026-03-26 12:47:28 [INF] Request starting HTTP/1.1 GET http://localhost:5094/swagger/swagger-ui.css - null null
+2026-03-26 12:47:28 [INF] Request starting HTTP/1.1 GET http://localhost:5094/swagger/swagger-ui-bundle.js - null null
+2026-03-26 12:47:28 [INF] Request starting HTTP/1.1 GET http://localhost:5094/swagger/index.js - null null
+2026-03-26 12:47:28 [INF] Request starting HTTP/1.1 GET http://localhost:5094/swagger/swagger-ui-standalone-preset.js - null null
+2026-03-26 12:47:28 [INF] Request finished HTTP/1.1 GET http://localhost:5094/swagger/index.js - 200 null application/javascript;charset=utf-8 6.4021ms
+2026-03-26 12:47:28 [INF] Sending file. Request path: '/index.css'. Physical path: 'N/A'
+2026-03-26 12:47:28 [INF] Request finished HTTP/1.1 GET http://localhost:5094/swagger/index.css - 200 202 text/css 13.7232ms
+2026-03-26 12:47:28 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2026-03-26 12:47:28 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2026-03-26 12:47:28 [INF] Request finished HTTP/1.1 GET http://localhost:5094/swagger/swagger-ui-standalone-preset.js - 200 230293 text/javascript 17.5347ms
+2026-03-26 12:47:28 [INF] Request finished HTTP/1.1 GET http://localhost:5094/swagger/swagger-ui.css - 200 152034 text/css 18.6313ms
+2026-03-26 12:47:28 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2026-03-26 12:47:28 [INF] Request finished HTTP/1.1 GET http://localhost:5094/swagger/swagger-ui-bundle.js - 200 1452753 text/javascript 24.7483ms
+2026-03-26 12:47:29 [INF] Request starting HTTP/1.1 GET http://localhost:5094/swagger/v1/swagger.json - null null
+2026-03-26 12:47:29 [INF] Request starting HTTP/1.1 GET http://localhost:5094/swagger/favicon-32x32.png - null null
+2026-03-26 12:47:29 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2026-03-26 12:47:29 [INF] Request finished HTTP/1.1 GET http://localhost:5094/swagger/favicon-32x32.png - 200 628 image/png 4.1074ms
+2026-03-26 12:47:29 [INF] Request finished HTTP/1.1 GET http://localhost:5094/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 61.7936ms
+2026-03-26 12:52:37 [INF] Request starting HTTP/1.1 GET http://localhost:5094/ - null null
+2026-03-26 12:52:37 [WRN] [Gateway] ::1 GET / → 404 (15.9401ms)
+2026-03-26 12:52:37 [INF] Request finished HTTP/1.1 GET http://localhost:5094/ - 404 0 null 24.2185ms
+2026-03-26 12:52:37 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5094/, Response status code: 404
+2026-03-26 13:54:39 [INF] Request starting HTTP/1.1 POST http://localhost:5094/api/Auth/login - application/json 50
+2026-03-26 13:54:39 [INF] Executing endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-03-26 13:54:39 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(SecureAPIGateway.Models.LoginRequest) on controller SecureAPIGateway.Controllers.AuthController (SecureAPIGateway).
+2026-03-26 13:54:39 [WRN] [Auth] Failed login attempt for user: string
+2026-03-26 13:54:39 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-03-26 13:54:39 [INF] Executed action SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway) in 28.4491ms
+2026-03-26 13:54:39 [INF] Executed endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-03-26 13:54:39 [WRN] [Gateway] ::1 POST /api/Auth/login → 401 (60.3972ms)
+2026-03-26 13:54:39 [INF] Request finished HTTP/1.1 POST http://localhost:5094/api/Auth/login - 401 null application/json; charset=utf-8 66.3111ms
+2026-03-26 14:00:14 [INF] Request starting HTTP/1.1 GET http://localhost:5094/swagger/index.html - null null
+2026-03-26 14:00:14 [INF] Request finished HTTP/1.1 GET http://localhost:5094/swagger/index.html - 200 null text/html;charset=utf-8 2.1667ms
+2026-03-26 14:00:14 [INF] Request starting HTTP/1.1 GET http://localhost:5094/swagger/index.js - null null
+2026-03-26 14:00:14 [INF] Request finished HTTP/1.1 GET http://localhost:5094/swagger/index.js - 200 null application/javascript;charset=utf-8 2.679ms
+2026-03-26 14:00:14 [INF] Request starting HTTP/1.1 GET http://localhost:5094/swagger/v1/swagger.json - null null
+2026-03-26 14:00:14 [INF] Request finished HTTP/1.1 GET http://localhost:5094/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 4.2856ms
+2026-03-26 14:01:19 [INF] Request starting HTTP/1.1 POST http://localhost:5094/api/Auth/login - application/json 52
+2026-03-26 14:01:19 [INF] Executing endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-03-26 14:01:19 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(SecureAPIGateway.Models.LoginRequest) on controller SecureAPIGateway.Controllers.AuthController (SecureAPIGateway).
+2026-03-26 14:01:19 [INF] [Auth] Token issued for user: admin (Role: Admin)
+2026-03-26 14:01:19 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`3[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-03-26 14:01:19 [INF] Executed action SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway) in 23.9756ms
+2026-03-26 14:01:19 [INF] Executed endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-03-26 14:01:19 [INF] [Gateway] ::1 POST /api/Auth/login → 200 (46.0969ms)
+2026-03-26 14:01:19 [INF] Request finished HTTP/1.1 POST http://localhost:5094/api/Auth/login - 200 null application/json; charset=utf-8 49.7417ms

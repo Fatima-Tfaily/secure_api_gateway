@@ -1,0 +1,87 @@
+2026-04-16 13:09:47 [INF] Secure API Gateway running. Swagger: http://localhost:5000/swagger
+2026-04-16 13:09:47 [INF] User profile is available. Using 'C:\Users\asus\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-04-16 13:09:47 [INF] Now listening on: http://localhost:5094
+2026-04-16 13:09:47 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-16 13:09:47 [INF] Hosting environment: Development
+2026-04-16 13:09:47 [INF] Content root path: C:\Users\asus\source\repos\SecureAPIGatway\SecureAPIGateway
+2026-04-16 13:10:01 [INF] Request starting HTTP/1.1 GET http://localhost:5094/swagger/index.html - null null
+2026-04-16 13:10:01 [INF] Request finished HTTP/1.1 GET http://localhost:5094/swagger/index.html - 200 null text/html;charset=utf-8 57.2168ms
+2026-04-16 13:10:01 [INF] Request starting HTTP/1.1 GET http://localhost:5094/swagger/index.js - null null
+2026-04-16 13:10:01 [INF] Request finished HTTP/1.1 GET http://localhost:5094/swagger/index.js - 200 null application/javascript;charset=utf-8 4.8851ms
+2026-04-16 13:10:01 [INF] Request starting HTTP/1.1 GET http://localhost:5094/swagger/v1/swagger.json - null null
+2026-04-16 13:10:02 [INF] Request finished HTTP/1.1 GET http://localhost:5094/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 78.6963ms
+2026-04-16 13:10:10 [INF] Request starting HTTP/1.1 GET http://localhost:5094/swagger/index.html - null null
+2026-04-16 13:10:10 [INF] Request finished HTTP/1.1 GET http://localhost:5094/swagger/index.html - 200 null text/html;charset=utf-8 3.3894ms
+2026-04-16 13:10:10 [INF] Request starting HTTP/1.1 GET http://localhost:5094/swagger/index.js - null null
+2026-04-16 13:10:10 [INF] Request finished HTTP/1.1 GET http://localhost:5094/swagger/index.js - 200 null application/javascript;charset=utf-8 5.5757ms
+2026-04-16 13:10:11 [INF] Request starting HTTP/1.1 GET http://localhost:5094/swagger/v1/swagger.json - null null
+2026-04-16 13:10:11 [INF] Request finished HTTP/1.1 GET http://localhost:5094/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 5.9158ms
+2026-04-16 13:14:37 [INF] Request starting HTTP/1.1 POST http://localhost:5094/api/Auth/login - application/json 52
+2026-04-16 13:14:37 [INF] Executing endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-04-16 13:14:37 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(SecureAPIGateway.Models.LoginRequest) on controller SecureAPIGateway.Controllers.AuthController (SecureAPIGateway).
+2026-04-16 13:14:37 [INF] [Auth] Token issued for user: admin (Role: Admin)
+2026-04-16 13:14:37 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`3[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-04-16 13:14:37 [INF] Executed action SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway) in 63.8737ms
+2026-04-16 13:14:37 [INF] Executed endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-04-16 13:14:37 [INF] [Gateway] ::1 POST /api/Auth/login → 200 (151.2432ms)
+2026-04-16 13:14:37 [INF] Request finished HTTP/1.1 POST http://localhost:5094/api/Auth/login - 200 null application/json; charset=utf-8 163.4037ms
+2026-04-16 13:17:21 [INF] Request starting HTTP/1.1 GET http://localhost:5094/api/Gateway - null null
+2026-04-16 13:17:21 [INF] Failed to validate the token.
+System.ArgumentException: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.
+ ---> System.FormatException: IDX10400: Unable to decode: '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64url encoded string.
+   at Microsoft.IdentityModel.Tokens.Base64UrlEncoder.Decode(ReadOnlySpan`1 strSpan, Span`1 output, Boolean needReplace, Int32 decodedLength)
+   at Microsoft.IdentityModel.Tokens.Base64UrlEncoder.Decode(ReadOnlySpan`1 strSpan, Span`1 output)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.CreateClaimSet(ReadOnlySpan`1 strSpan, Int32 startIndex, Int32 length, Boolean createHeaderClaimSet)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   --- End of inner exception stack trace ---
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
+2026-04-16 13:17:21 [INF] Bearer was not authenticated. Failure message: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.
+2026-04-16 13:17:21 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-04-16 13:17:21 [INF] AuthenticationScheme: Bearer was challenged.
+2026-04-16 13:17:21 [WRN] [Gateway] ::1 GET /api/Gateway → 401 (28.5402ms)
+2026-04-16 13:17:21 [INF] Request finished HTTP/1.1 GET http://localhost:5094/api/Gateway - 401 0 null 33.1013ms
+2026-04-16 13:19:24 [INF] Request starting HTTP/1.1 GET http://localhost:5094/api/Gateway - null null
+2026-04-16 13:19:24 [INF] Failed to validate the token.
+System.ArgumentException: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.
+ ---> System.FormatException: IDX10400: Unable to decode: '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64url encoded string.
+   at Microsoft.IdentityModel.Tokens.Base64UrlEncoder.Decode(ReadOnlySpan`1 strSpan, Span`1 output, Boolean needReplace, Int32 decodedLength)
+   at Microsoft.IdentityModel.Tokens.Base64UrlEncoder.Decode(ReadOnlySpan`1 strSpan, Span`1 output)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.CreateClaimSet(ReadOnlySpan`1 strSpan, Int32 startIndex, Int32 length, Boolean createHeaderClaimSet)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   --- End of inner exception stack trace ---
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
+2026-04-16 13:19:24 [INF] Bearer was not authenticated. Failure message: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.
+2026-04-16 13:19:24 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-04-16 13:19:24 [INF] AuthenticationScheme: Bearer was challenged.
+2026-04-16 13:19:24 [WRN] [Gateway] ::1 GET /api/Gateway → 401 (10.425ms)
+2026-04-16 13:19:24 [INF] Request finished HTTP/1.1 GET http://localhost:5094/api/Gateway - 401 0 null 16.1211ms
+2026-04-16 13:20:45 [INF] Request starting HTTP/1.1 GET http://localhost:5094/swagger/index.html - null null
+2026-04-16 13:20:45 [INF] Request finished HTTP/1.1 GET http://localhost:5094/swagger/index.html - 200 null text/html;charset=utf-8 1.8937ms
+2026-04-16 13:20:45 [INF] Request starting HTTP/1.1 GET http://localhost:5094/swagger/index.js - null null
+2026-04-16 13:20:45 [INF] Request finished HTTP/1.1 GET http://localhost:5094/swagger/index.js - 200 null application/javascript;charset=utf-8 3.6242ms
+2026-04-16 13:20:45 [INF] Request starting HTTP/1.1 GET http://localhost:5094/swagger/v1/swagger.json - null null
+2026-04-16 13:20:45 [INF] Request finished HTTP/1.1 GET http://localhost:5094/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 4.2355ms
+2026-04-16 13:21:11 [INF] Request starting HTTP/1.1 POST http://localhost:5094/api/Auth/login - application/json 52
+2026-04-16 13:21:11 [INF] Executing endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-04-16 13:21:11 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(SecureAPIGateway.Models.LoginRequest) on controller SecureAPIGateway.Controllers.AuthController (SecureAPIGateway).
+2026-04-16 13:21:11 [INF] [Auth] Token issued for user: admin (Role: Admin)
+2026-04-16 13:21:11 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`3[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-04-16 13:21:11 [INF] Executed action SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway) in 2.629ms
+2026-04-16 13:21:11 [INF] Executed endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-04-16 13:21:11 [INF] [Gateway] ::1 POST /api/Auth/login → 200 (6.6687ms)
+2026-04-16 13:21:11 [INF] Request finished HTTP/1.1 POST http://localhost:5094/api/Auth/login - 200 null application/json; charset=utf-8 10.2118ms
+2026-04-16 13:21:13 [INF] Request starting HTTP/1.1 POST http://localhost:5094/api/Auth/login - application/json 52
+2026-04-16 13:21:13 [INF] Executing endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-04-16 13:21:13 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(SecureAPIGateway.Models.LoginRequest) on controller SecureAPIGateway.Controllers.AuthController (SecureAPIGateway).
+2026-04-16 13:21:13 [INF] [Auth] Token issued for user: admin (Role: Admin)
+2026-04-16 13:21:13 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`3[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-04-16 13:21:13 [INF] Executed action SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway) in 1.7387ms
+2026-04-16 13:21:13 [INF] Executed endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-04-16 13:21:13 [INF] [Gateway] ::1 POST /api/Auth/login → 200 (5.879ms)
+2026-04-16 13:21:13 [INF] Request finished HTTP/1.1 POST http://localhost:5094/api/Auth/login - 200 null application/json; charset=utf-8 10.9873ms

@@ -1,0 +1,1088 @@
+2026-05-09 10:31:53 [INF] Secure API Gateway running on port 5000. Swagger: /swagger
+2026-05-09 10:31:53 [INF] User profile is available. Using '/Users/joyagergess/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2026-05-09 10:31:53 [INF] Creating key {1f892e40-556c-474a-8083-5a39d3378cd3} with creation date 2026-05-09 07:31:53Z, activation date 2026-05-09 07:31:53Z, and expiration date 2026-08-07 07:31:53Z.
+2026-05-09 10:31:53 [WRN] No XML encryptor configured. Key {1f892e40-556c-474a-8083-5a39d3378cd3} may be persisted to storage in unencrypted form.
+2026-05-09 10:31:53 [INF] Writing data to file '/Users/joyagergess/.aspnet/DataProtection-Keys/key-1f892e40-556c-474a-8083-5a39d3378cd3.xml'.
+2026-05-09 10:31:53 [INF] Now listening on: http://0.0.0.0:5000
+2026-05-09 10:31:53 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-09 10:31:53 [INF] Hosting environment: Development
+2026-05-09 10:31:53 [INF] Content root path: /Users/joyagergess/Downloads/SecureAPIGatway/SecureAPIGateway
+2026-05-09 10:33:05 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger - null null
+2026-05-09 10:33:05 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger - 301 0 null 21.9941ms
+2026-05-09 10:33:05 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - null null
+2026-05-09 10:33:05 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - 200 null text/html;charset=utf-8 16.562ms
+2026-05-09 10:33:05 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui.css - null null
+2026-05-09 10:33:05 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.css - null null
+2026-05-09 10:33:05 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-bundle.js - null null
+2026-05-09 10:33:05 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.js - null null
+2026-05-09 10:33:05 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-standalone-preset.js - null null
+2026-05-09 10:33:05 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.js - 200 null application/javascript;charset=utf-8 0.4821ms
+2026-05-09 10:33:05 [INF] Sending file. Request path: '/index.css'. Physical path: 'N/A'
+2026-05-09 10:33:05 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.css - 200 202 text/css 2.0983ms
+2026-05-09 10:33:05 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2026-05-09 10:33:05 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2026-05-09 10:33:05 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-standalone-preset.js - 200 230293 text/javascript 4.5402ms
+2026-05-09 10:33:05 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui.css - 200 152034 text/css 8.5965ms
+2026-05-09 10:33:06 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2026-05-09 10:33:06 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-bundle.js - 200 1452753 text/javascript 7.258ms
+2026-05-09 10:33:06 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/favicon-32x32.png - null null
+2026-05-09 10:33:06 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/favicon-16x16.png - null null
+2026-05-09 10:33:06 [INF] Sending file. Request path: '/favicon-16x16.png'. Physical path: 'N/A'
+2026-05-09 10:33:06 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2026-05-09 10:33:06 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/favicon-16x16.png - 200 665 image/png 0.5478ms
+2026-05-09 10:33:06 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/favicon-32x32.png - 200 628 image/png 0.7732ms
+2026-05-09 10:33:06 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - null null
+2026-05-09 10:33:06 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 49.062ms
+2026-05-09 10:33:24 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Auth/login - application/json 50
+2026-05-09 10:33:24 [INF] Executing endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 10:33:24 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(SecureAPIGateway.Models.LoginRequest) on controller SecureAPIGateway.Controllers.AuthController (SecureAPIGateway).
+2026-05-09 10:33:24 [WRN] [Auth] Failed login attempt for user: string
+2026-05-09 10:33:24 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-09 10:33:24 [INF] Executed action SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway) in 13.4526ms
+2026-05-09 10:33:24 [INF] Executed endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 10:33:24 [WRN] [Gateway] 127.0.0.1 POST /api/Auth/login → 401 (70.385ms)
+2026-05-09 10:33:24 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Auth/login - 401 null application/json; charset=utf-8 75.9971ms
+2026-05-09 10:52:13 [INF] Application is shutting down...
+2026-05-09 11:20:00 [INF] Secure API Gateway running on port 5000. Swagger: /swagger
+2026-05-09 11:20:00 [INF] User profile is available. Using '/Users/joyagergess/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2026-05-09 11:20:00 [INF] Now listening on: http://0.0.0.0:5000
+2026-05-09 11:20:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-09 11:20:00 [INF] Hosting environment: Development
+2026-05-09 11:20:00 [INF] Content root path: /Users/joyagergess/Downloads/SecureAPIGatway/SecureAPIGateway
+2026-05-09 11:23:31 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - null null
+2026-05-09 11:23:31 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - 200 null text/html;charset=utf-8 41.2658ms
+2026-05-09 11:23:31 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.js - null null
+2026-05-09 11:23:31 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.js - 200 null application/javascript;charset=utf-8 3.5266ms
+2026-05-09 11:23:31 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - null null
+2026-05-09 11:23:31 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 62.6937ms
+2026-05-09 11:26:28 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Auth/login - application/json 58
+2026-05-09 11:26:28 [INF] Start processing HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:26:28 [INF] Sending HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:26:28 [INF] Received HTTP response headers after 26.5154ms - 200
+2026-05-09 11:26:28 [INF] End processing HTTP request after 29.7113ms - 200
+2026-05-09 11:26:28 [INF] Executing endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:26:28 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(SecureAPIGateway.Models.LoginRequest) on controller SecureAPIGateway.Controllers.AuthController (SecureAPIGateway).
+2026-05-09 11:26:28 [WRN] [Auth] Failed login attempt for user: admin' OR '1'='1
+2026-05-09 11:26:28 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-09 11:26:28 [INF] Executed action SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway) in 5.375ms
+2026-05-09 11:26:28 [INF] Executed endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:26:28 [WRN] [Gateway] 127.0.0.1 POST /api/Auth/login → 401 (96.867ms)
+2026-05-09 11:26:28 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Auth/login - 401 null application/json; charset=utf-8 102.9911ms
+2026-05-09 11:27:20 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Auth/login - application/json 58
+2026-05-09 11:27:20 [INF] Start processing HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:27:20 [INF] Sending HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:27:20 [INF] Received HTTP response headers after 19.6002ms - 200
+2026-05-09 11:27:20 [INF] End processing HTTP request after 20.2812ms - 200
+2026-05-09 11:27:20 [INF] Executing endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:27:20 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(SecureAPIGateway.Models.LoginRequest) on controller SecureAPIGateway.Controllers.AuthController (SecureAPIGateway).
+2026-05-09 11:27:20 [WRN] [Auth] Failed login attempt for user: admin' OR '1'='1
+2026-05-09 11:27:20 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-09 11:27:20 [INF] Executed action SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway) in 0.9045ms
+2026-05-09 11:27:20 [INF] Executed endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:27:20 [WRN] [Gateway] 127.0.0.1 POST /api/Auth/login → 401 (26.593ms)
+2026-05-09 11:27:20 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Auth/login - 401 null application/json; charset=utf-8 29.1474ms
+2026-05-09 11:29:55 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/Gateway/test?aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa - null null
+2026-05-09 11:29:55 [INF] Start processing HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:29:55 [INF] Sending HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:29:55 [INF] Received HTTP response headers after 15.1037ms - 200
+2026-05-09 11:29:55 [INF] End processing HTTP request after 15.5478ms - 200
+2026-05-09 11:29:55 [WRN] [Gateway] 127.0.0.1 GET /api/Gateway/test?aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa → 404 (18.152ms)
+2026-05-09 11:29:55 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/Gateway/test?aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa - 404 0 null 22.1692ms
+2026-05-09 11:29:55 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/api/Gateway/test, Response status code: 404
+2026-05-09 11:29:55 [INF] Request starting HTTP/1.1 GET http://localhost:5000/favicon.ico - null null
+2026-05-09 11:29:55 [INF] Start processing HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:29:55 [INF] Sending HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:29:55 [INF] Received HTTP response headers after 18.1494ms - 200
+2026-05-09 11:29:55 [INF] End processing HTTP request after 19ms - 200
+2026-05-09 11:29:55 [WRN] [Gateway] 127.0.0.1 GET /favicon.ico → 404 (19.958ms)
+2026-05-09 11:29:55 [INF] Request finished HTTP/1.1 GET http://localhost:5000/favicon.ico - 404 0 null 21.6935ms
+2026-05-09 11:29:55 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5000/favicon.ico, Response status code: 404
+2026-05-09 11:33:01 [INF] Application is shutting down...
+2026-05-09 11:33:06 [INF] Secure API Gateway running on port 5000. Swagger: /swagger
+2026-05-09 11:33:06 [INF] User profile is available. Using '/Users/joyagergess/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2026-05-09 11:33:06 [INF] Now listening on: http://0.0.0.0:5000
+2026-05-09 11:33:06 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-09 11:33:06 [INF] Hosting environment: Development
+2026-05-09 11:33:06 [INF] Content root path: /Users/joyagergess/Downloads/SecureAPIGatway/SecureAPIGateway
+2026-05-09 11:33:32 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Auth/login - application/json 58
+2026-05-09 11:33:32 [INF] Start processing HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:33:32 [INF] Sending HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:33:32 [INF] Received HTTP response headers after 22.1067ms - 200
+2026-05-09 11:33:32 [INF] End processing HTTP request after 26.1792ms - 200
+2026-05-09 11:33:32 [INF] Executing endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:33:32 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(SecureAPIGateway.Models.LoginRequest) on controller SecureAPIGateway.Controllers.AuthController (SecureAPIGateway).
+2026-05-09 11:33:32 [WRN] [Auth] Failed login attempt for user: admin' OR '1'='1
+2026-05-09 11:33:32 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-09 11:33:32 [INF] Executed action SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway) in 5.8602ms
+2026-05-09 11:33:32 [INF] Executed endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:33:32 [WRN] [Gateway] 127.0.0.1 POST /api/Auth/login → 401 (69.07ms)
+2026-05-09 11:33:32 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Auth/login - 401 null application/json; charset=utf-8 88.7791ms
+2026-05-09 11:36:20 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Auth/login - application/json 58
+2026-05-09 11:36:20 [INF] Start processing HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:36:20 [INF] Sending HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:36:20 [INF] Received HTTP response headers after 6.2951ms - 200
+2026-05-09 11:36:20 [INF] End processing HTTP request after 7.3113ms - 200
+2026-05-09 11:36:20 [WRN] [AI Detection] BLOCKED POST /api/Auth/login from 127.0.0.1. Threat=SQL Injection / Suspicious Payload, Confidence=0.95
+2026-05-09 11:36:20 [WRN] [Gateway] 127.0.0.1 POST /api/Auth/login → 403 (11.767ms)
+2026-05-09 11:36:20 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Auth/login - 403 null application/json 15.168ms
+2026-05-09 11:38:41 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Auth/login - application/json 47
+2026-05-09 11:38:41 [INF] Start processing HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:38:41 [INF] Sending HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:38:41 [INF] Received HTTP response headers after 24.0292ms - 200
+2026-05-09 11:38:41 [INF] End processing HTTP request after 24.8055ms - 200
+2026-05-09 11:38:41 [INF] Executing endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:38:41 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(SecureAPIGateway.Models.LoginRequest) on controller SecureAPIGateway.Controllers.AuthController (SecureAPIGateway).
+2026-05-09 11:38:41 [WRN] [Auth] Failed login attempt for user: admin
+2026-05-09 11:38:41 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-09 11:38:41 [INF] Executed action SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway) in 0.932ms
+2026-05-09 11:38:41 [INF] Executed endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:38:41 [WRN] [Gateway] 127.0.0.1 POST /api/Auth/login → 401 (28.364ms)
+2026-05-09 11:38:41 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Auth/login - 401 null application/json; charset=utf-8 30.706ms
+2026-05-09 11:38:52 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Auth/login - application/json 71
+2026-05-09 11:38:52 [WRN] [InputValidation] BLOCKED POST /api/Auth/login from 127.0.0.1 — Reason: XSS pattern detected
+2026-05-09 11:38:52 [WRN] [Gateway] 127.0.0.1 POST /api/Auth/login → 400 (12.51ms)
+2026-05-09 11:38:52 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Auth/login - 400 null application/json 13.1393ms
+2026-05-09 11:39:11 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/Gateway/test?id=1%20UNION%20SELECT%20password%20FROM%20users - null null
+2026-05-09 11:39:11 [INF] Start processing HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:39:11 [INF] Sending HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:39:11 [INF] Received HTTP response headers after 3.3919ms - 200
+2026-05-09 11:39:11 [INF] End processing HTTP request after 4.0729ms - 200
+2026-05-09 11:39:11 [WRN] [AI Detection] BLOCKED GET /api/Gateway/test from 127.0.0.1. Threat=SQL Injection / Suspicious Payload, Confidence=0.95
+2026-05-09 11:39:11 [WRN] [Gateway] 127.0.0.1 GET /api/Gateway/test?id=1%20UNION%20SELECT%20password%20FROM%20users → 403 (4.969ms)
+2026-05-09 11:39:11 [INF] Request finished HTTP/1.1 GET http://localhost:5000/api/Gateway/test?id=1%20UNION%20SELECT%20password%20FROM%20users - 403 null application/json 13.2216ms
+2026-05-09 11:39:52 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Auth/login - application/json 44
+2026-05-09 11:39:52 [INF] Start processing HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:39:52 [INF] Sending HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:39:52 [INF] Received HTTP response headers after 17.7285ms - 200
+2026-05-09 11:39:52 [INF] End processing HTTP request after 18.3608ms - 200
+2026-05-09 11:39:52 [INF] Executing endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:39:52 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(SecureAPIGateway.Models.LoginRequest) on controller SecureAPIGateway.Controllers.AuthController (SecureAPIGateway).
+2026-05-09 11:39:52 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2026-05-09 11:39:52 [INF] Executed action SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway) in 13.398ms
+2026-05-09 11:39:52 [INF] Executed endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:39:52 [WRN] [Gateway] 127.0.0.1 POST /api/Auth/login → 400 (34.856ms)
+2026-05-09 11:39:52 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Auth/login - 400 null application/problem+json; charset=utf-8 35.9889ms
+2026-05-09 11:40:03 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Auth/login - application/json 45
+2026-05-09 11:40:03 [INF] Start processing HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:03 [INF] Sending HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:03 [INF] Received HTTP response headers after 17.7984ms - 200
+2026-05-09 11:40:03 [INF] End processing HTTP request after 18.415ms - 200
+2026-05-09 11:40:03 [INF] Executing endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:03 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(SecureAPIGateway.Models.LoginRequest) on controller SecureAPIGateway.Controllers.AuthController (SecureAPIGateway).
+2026-05-09 11:40:03 [WRN] [Auth] Failed login attempt for user: ams
+2026-05-09 11:40:03 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-09 11:40:03 [INF] Executed action SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway) in 0.8057ms
+2026-05-09 11:40:03 [INF] Executed endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:03 [WRN] [Gateway] 127.0.0.1 POST /api/Auth/login → 401 (21.009ms)
+2026-05-09 11:40:03 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Auth/login - 401 null application/json; charset=utf-8 21.4507ms
+2026-05-09 11:40:05 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Auth/login - application/json 45
+2026-05-09 11:40:05 [INF] Start processing HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:05 [INF] Sending HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:05 [INF] Received HTTP response headers after 19.5622ms - 200
+2026-05-09 11:40:05 [INF] End processing HTTP request after 20.0024ms - 200
+2026-05-09 11:40:05 [INF] Executing endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:05 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(SecureAPIGateway.Models.LoginRequest) on controller SecureAPIGateway.Controllers.AuthController (SecureAPIGateway).
+2026-05-09 11:40:05 [WRN] [Auth] Failed login attempt for user: ams
+2026-05-09 11:40:05 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-09 11:40:05 [INF] Executed action SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway) in 0.8225ms
+2026-05-09 11:40:05 [INF] Executed endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:05 [WRN] [Gateway] 127.0.0.1 POST /api/Auth/login → 401 (22.023ms)
+2026-05-09 11:40:05 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Auth/login - 401 null application/json; charset=utf-8 22.4562ms
+2026-05-09 11:40:06 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Auth/login - application/json 45
+2026-05-09 11:40:06 [INF] Start processing HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:06 [INF] Sending HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:06 [INF] Received HTTP response headers after 12.0437ms - 200
+2026-05-09 11:40:06 [INF] End processing HTTP request after 12.3355ms - 200
+2026-05-09 11:40:06 [INF] Executing endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:06 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(SecureAPIGateway.Models.LoginRequest) on controller SecureAPIGateway.Controllers.AuthController (SecureAPIGateway).
+2026-05-09 11:40:06 [WRN] [Auth] Failed login attempt for user: ams
+2026-05-09 11:40:06 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-09 11:40:06 [INF] Executed action SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway) in 0.3022ms
+2026-05-09 11:40:06 [INF] Executed endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:06 [WRN] [Gateway] 127.0.0.1 POST /api/Auth/login → 401 (13.271ms)
+2026-05-09 11:40:06 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Auth/login - 401 null application/json; charset=utf-8 13.6149ms
+2026-05-09 11:40:06 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Auth/login - application/json 45
+2026-05-09 11:40:06 [INF] Start processing HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:06 [INF] Sending HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:06 [INF] Received HTTP response headers after 21.1703ms - 200
+2026-05-09 11:40:06 [INF] End processing HTTP request after 21.4789ms - 200
+2026-05-09 11:40:06 [INF] Executing endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:06 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(SecureAPIGateway.Models.LoginRequest) on controller SecureAPIGateway.Controllers.AuthController (SecureAPIGateway).
+2026-05-09 11:40:06 [WRN] [Auth] Failed login attempt for user: ams
+2026-05-09 11:40:06 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-09 11:40:06 [INF] Executed action SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway) in 0.5171ms
+2026-05-09 11:40:06 [INF] Executed endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:06 [WRN] [Gateway] 127.0.0.1 POST /api/Auth/login → 401 (22.889ms)
+2026-05-09 11:40:06 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Auth/login - 401 null application/json; charset=utf-8 23.3977ms
+2026-05-09 11:40:06 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Auth/login - application/json 45
+2026-05-09 11:40:06 [INF] Start processing HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:06 [INF] Sending HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:06 [INF] Received HTTP response headers after 20.3361ms - 200
+2026-05-09 11:40:06 [INF] End processing HTTP request after 20.7557ms - 200
+2026-05-09 11:40:06 [INF] Executing endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:06 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(SecureAPIGateway.Models.LoginRequest) on controller SecureAPIGateway.Controllers.AuthController (SecureAPIGateway).
+2026-05-09 11:40:06 [WRN] [Auth] Failed login attempt for user: ams
+2026-05-09 11:40:06 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-09 11:40:06 [INF] Executed action SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway) in 0.5619ms
+2026-05-09 11:40:06 [INF] Executed endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:06 [WRN] [Gateway] 127.0.0.1 POST /api/Auth/login → 401 (22.497ms)
+2026-05-09 11:40:06 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Auth/login - 401 null application/json; charset=utf-8 22.8822ms
+2026-05-09 11:40:06 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Auth/login - application/json 45
+2026-05-09 11:40:06 [INF] Start processing HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:06 [INF] Sending HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:06 [INF] Received HTTP response headers after 9.4819ms - 200
+2026-05-09 11:40:06 [INF] End processing HTTP request after 9.8287ms - 200
+2026-05-09 11:40:06 [INF] Executing endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:06 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(SecureAPIGateway.Models.LoginRequest) on controller SecureAPIGateway.Controllers.AuthController (SecureAPIGateway).
+2026-05-09 11:40:06 [WRN] [Auth] Failed login attempt for user: ams
+2026-05-09 11:40:06 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-09 11:40:06 [INF] Executed action SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway) in 0.247ms
+2026-05-09 11:40:06 [INF] Executed endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:06 [WRN] [Gateway] 127.0.0.1 POST /api/Auth/login → 401 (10.676ms)
+2026-05-09 11:40:06 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Auth/login - 401 null application/json; charset=utf-8 11.0453ms
+2026-05-09 11:40:06 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Auth/login - application/json 45
+2026-05-09 11:40:06 [INF] Start processing HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:06 [INF] Sending HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:06 [INF] Received HTTP response headers after 11.1684ms - 200
+2026-05-09 11:40:06 [INF] End processing HTTP request after 11.5413ms - 200
+2026-05-09 11:40:06 [INF] Executing endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:06 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(SecureAPIGateway.Models.LoginRequest) on controller SecureAPIGateway.Controllers.AuthController (SecureAPIGateway).
+2026-05-09 11:40:06 [WRN] [Auth] Failed login attempt for user: ams
+2026-05-09 11:40:06 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-09 11:40:06 [INF] Executed action SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway) in 0.2597ms
+2026-05-09 11:40:06 [INF] Executed endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:06 [WRN] [Gateway] 127.0.0.1 POST /api/Auth/login → 401 (12.588ms)
+2026-05-09 11:40:06 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Auth/login - 401 null application/json; charset=utf-8 12.9882ms
+2026-05-09 11:40:07 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Auth/login - application/json 45
+2026-05-09 11:40:07 [INF] Start processing HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:07 [INF] Sending HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:07 [INF] Received HTTP response headers after 11.0737ms - 200
+2026-05-09 11:40:07 [INF] End processing HTTP request after 11.3601ms - 200
+2026-05-09 11:40:07 [INF] Executing endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:07 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(SecureAPIGateway.Models.LoginRequest) on controller SecureAPIGateway.Controllers.AuthController (SecureAPIGateway).
+2026-05-09 11:40:07 [WRN] [Auth] Failed login attempt for user: ams
+2026-05-09 11:40:07 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-09 11:40:07 [INF] Executed action SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway) in 0.2882ms
+2026-05-09 11:40:07 [INF] Executed endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:07 [WRN] [Gateway] 127.0.0.1 POST /api/Auth/login → 401 (12.346ms)
+2026-05-09 11:40:07 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Auth/login - 401 null application/json; charset=utf-8 12.7044ms
+2026-05-09 11:40:07 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Auth/login - application/json 45
+2026-05-09 11:40:07 [INF] Start processing HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:07 [INF] Sending HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:07 [INF] Received HTTP response headers after 15.737ms - 200
+2026-05-09 11:40:07 [INF] End processing HTTP request after 16.1318ms - 200
+2026-05-09 11:40:07 [INF] Executing endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:07 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(SecureAPIGateway.Models.LoginRequest) on controller SecureAPIGateway.Controllers.AuthController (SecureAPIGateway).
+2026-05-09 11:40:07 [WRN] [Auth] Failed login attempt for user: ams
+2026-05-09 11:40:07 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-09 11:40:07 [INF] Executed action SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway) in 0.444ms
+2026-05-09 11:40:07 [INF] Executed endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:07 [WRN] [Gateway] 127.0.0.1 POST /api/Auth/login → 401 (17.54ms)
+2026-05-09 11:40:07 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Auth/login - 401 null application/json; charset=utf-8 17.969ms
+2026-05-09 11:40:07 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Auth/login - application/json 45
+2026-05-09 11:40:07 [INF] Start processing HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:07 [INF] Sending HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:07 [INF] Received HTTP response headers after 15.7565ms - 200
+2026-05-09 11:40:07 [INF] End processing HTTP request after 16.1705ms - 200
+2026-05-09 11:40:07 [INF] Executing endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:07 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(SecureAPIGateway.Models.LoginRequest) on controller SecureAPIGateway.Controllers.AuthController (SecureAPIGateway).
+2026-05-09 11:40:07 [WRN] [Auth] Failed login attempt for user: ams
+2026-05-09 11:40:07 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-09 11:40:07 [INF] Executed action SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway) in 0.6789ms
+2026-05-09 11:40:07 [INF] Executed endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:07 [WRN] [Gateway] 127.0.0.1 POST /api/Auth/login → 401 (18.379ms)
+2026-05-09 11:40:07 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Auth/login - 401 null application/json; charset=utf-8 18.7705ms
+2026-05-09 11:40:07 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Auth/login - application/json 45
+2026-05-09 11:40:07 [INF] Start processing HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:07 [INF] Sending HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:07 [INF] Received HTTP response headers after 20.316ms - 200
+2026-05-09 11:40:07 [INF] End processing HTTP request after 20.8064ms - 200
+2026-05-09 11:40:07 [INF] Executing endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:07 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(SecureAPIGateway.Models.LoginRequest) on controller SecureAPIGateway.Controllers.AuthController (SecureAPIGateway).
+2026-05-09 11:40:07 [WRN] [Auth] Failed login attempt for user: ams
+2026-05-09 11:40:07 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-09 11:40:07 [INF] Executed action SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway) in 0.7409ms
+2026-05-09 11:40:07 [INF] Executed endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:07 [WRN] [Gateway] 127.0.0.1 POST /api/Auth/login → 401 (22.815ms)
+2026-05-09 11:40:07 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Auth/login - 401 null application/json; charset=utf-8 23.2858ms
+2026-05-09 11:40:07 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Auth/login - application/json 45
+2026-05-09 11:40:07 [INF] Start processing HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:07 [INF] Sending HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:07 [INF] Received HTTP response headers after 10.7481ms - 200
+2026-05-09 11:40:07 [INF] End processing HTTP request after 11.1022ms - 200
+2026-05-09 11:40:07 [INF] Executing endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:07 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(SecureAPIGateway.Models.LoginRequest) on controller SecureAPIGateway.Controllers.AuthController (SecureAPIGateway).
+2026-05-09 11:40:07 [WRN] [Auth] Failed login attempt for user: ams
+2026-05-09 11:40:07 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-09 11:40:07 [INF] Executed action SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway) in 0.2545ms
+2026-05-09 11:40:07 [INF] Executed endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:07 [WRN] [Gateway] 127.0.0.1 POST /api/Auth/login → 401 (12.028ms)
+2026-05-09 11:40:07 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Auth/login - 401 null application/json; charset=utf-8 12.4271ms
+2026-05-09 11:40:07 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Auth/login - application/json 45
+2026-05-09 11:40:07 [INF] Start processing HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:07 [INF] Sending HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:07 [INF] Received HTTP response headers after 12.7175ms - 200
+2026-05-09 11:40:07 [INF] End processing HTTP request after 13.0948ms - 200
+2026-05-09 11:40:07 [INF] Executing endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:07 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(SecureAPIGateway.Models.LoginRequest) on controller SecureAPIGateway.Controllers.AuthController (SecureAPIGateway).
+2026-05-09 11:40:07 [WRN] [Auth] Failed login attempt for user: ams
+2026-05-09 11:40:07 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-09 11:40:07 [INF] Executed action SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway) in 0.3036ms
+2026-05-09 11:40:07 [INF] Executed endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:07 [WRN] [Gateway] 127.0.0.1 POST /api/Auth/login → 401 (14.076ms)
+2026-05-09 11:40:07 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Auth/login - 401 null application/json; charset=utf-8 14.4428ms
+2026-05-09 11:40:07 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Auth/login - application/json 45
+2026-05-09 11:40:07 [INF] Start processing HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:07 [INF] Sending HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:07 [INF] Received HTTP response headers after 14.7012ms - 200
+2026-05-09 11:40:07 [INF] End processing HTTP request after 15.0249ms - 200
+2026-05-09 11:40:07 [INF] Executing endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:07 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(SecureAPIGateway.Models.LoginRequest) on controller SecureAPIGateway.Controllers.AuthController (SecureAPIGateway).
+2026-05-09 11:40:07 [WRN] [Auth] Failed login attempt for user: ams
+2026-05-09 11:40:07 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-09 11:40:07 [INF] Executed action SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway) in 0.3965ms
+2026-05-09 11:40:07 [INF] Executed endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:07 [WRN] [Gateway] 127.0.0.1 POST /api/Auth/login → 401 (16.262ms)
+2026-05-09 11:40:07 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Auth/login - 401 null application/json; charset=utf-8 16.6532ms
+2026-05-09 11:40:08 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Auth/login - application/json 45
+2026-05-09 11:40:08 [INF] Start processing HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:08 [INF] Sending HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:08 [INF] Received HTTP response headers after 7.8344ms - 200
+2026-05-09 11:40:08 [INF] End processing HTTP request after 8.0943ms - 200
+2026-05-09 11:40:08 [INF] Executing endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:08 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(SecureAPIGateway.Models.LoginRequest) on controller SecureAPIGateway.Controllers.AuthController (SecureAPIGateway).
+2026-05-09 11:40:08 [WRN] [Auth] Failed login attempt for user: ams
+2026-05-09 11:40:08 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-09 11:40:08 [INF] Executed action SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway) in 0.205ms
+2026-05-09 11:40:08 [INF] Executed endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:08 [WRN] [Gateway] 127.0.0.1 POST /api/Auth/login → 401 (8.857ms)
+2026-05-09 11:40:08 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Auth/login - 401 null application/json; charset=utf-8 9.1804ms
+2026-05-09 11:40:08 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Auth/login - application/json 45
+2026-05-09 11:40:08 [INF] Start processing HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:08 [INF] Sending HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:08 [INF] Received HTTP response headers after 18.4046ms - 200
+2026-05-09 11:40:08 [INF] End processing HTTP request after 18.9163ms - 200
+2026-05-09 11:40:08 [INF] Executing endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:08 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(SecureAPIGateway.Models.LoginRequest) on controller SecureAPIGateway.Controllers.AuthController (SecureAPIGateway).
+2026-05-09 11:40:08 [WRN] [Auth] Failed login attempt for user: ams
+2026-05-09 11:40:08 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-09 11:40:08 [INF] Executed action SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway) in 0.5979ms
+2026-05-09 11:40:08 [INF] Executed endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:08 [WRN] [Gateway] 127.0.0.1 POST /api/Auth/login → 401 (20.572ms)
+2026-05-09 11:40:08 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Auth/login - 401 null application/json; charset=utf-8 21.0094ms
+2026-05-09 11:40:08 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Auth/login - application/json 45
+2026-05-09 11:40:08 [INF] Start processing HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:08 [INF] Sending HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:08 [INF] Received HTTP response headers after 16.2813ms - 200
+2026-05-09 11:40:08 [INF] End processing HTTP request after 16.7447ms - 200
+2026-05-09 11:40:08 [INF] Executing endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:08 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(SecureAPIGateway.Models.LoginRequest) on controller SecureAPIGateway.Controllers.AuthController (SecureAPIGateway).
+2026-05-09 11:40:08 [WRN] [Auth] Failed login attempt for user: ams
+2026-05-09 11:40:08 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-09 11:40:08 [INF] Executed action SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway) in 0.4139ms
+2026-05-09 11:40:08 [INF] Executed endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:08 [WRN] [Gateway] 127.0.0.1 POST /api/Auth/login → 401 (18.172ms)
+2026-05-09 11:40:08 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Auth/login - 401 null application/json; charset=utf-8 18.7177ms
+2026-05-09 11:40:08 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Auth/login - application/json 45
+2026-05-09 11:40:08 [INF] Start processing HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:08 [INF] Sending HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:08 [INF] Received HTTP response headers after 16.5818ms - 200
+2026-05-09 11:40:08 [INF] End processing HTTP request after 17.0648ms - 200
+2026-05-09 11:40:08 [INF] Executing endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:08 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(SecureAPIGateway.Models.LoginRequest) on controller SecureAPIGateway.Controllers.AuthController (SecureAPIGateway).
+2026-05-09 11:40:08 [WRN] [Auth] Failed login attempt for user: ams
+2026-05-09 11:40:08 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-09 11:40:08 [INF] Executed action SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway) in 0.7826ms
+2026-05-09 11:40:08 [INF] Executed endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:08 [WRN] [Gateway] 127.0.0.1 POST /api/Auth/login → 401 (19.301ms)
+2026-05-09 11:40:08 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Auth/login - 401 null application/json; charset=utf-8 19.883ms
+2026-05-09 11:40:08 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Auth/login - application/json 45
+2026-05-09 11:40:08 [INF] Start processing HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:08 [INF] Sending HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:08 [INF] Received HTTP response headers after 14.3557ms - 200
+2026-05-09 11:40:08 [INF] End processing HTTP request after 14.7397ms - 200
+2026-05-09 11:40:08 [INF] Executing endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:08 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(SecureAPIGateway.Models.LoginRequest) on controller SecureAPIGateway.Controllers.AuthController (SecureAPIGateway).
+2026-05-09 11:40:08 [WRN] [Auth] Failed login attempt for user: ams
+2026-05-09 11:40:08 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-09 11:40:08 [INF] Executed action SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway) in 0.5229ms
+2026-05-09 11:40:08 [INF] Executed endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:08 [WRN] [Gateway] 127.0.0.1 POST /api/Auth/login → 401 (16.151ms)
+2026-05-09 11:40:08 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Auth/login - 401 null application/json; charset=utf-8 16.5713ms
+2026-05-09 11:40:08 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Auth/login - application/json 45
+2026-05-09 11:40:08 [INF] Start processing HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:08 [INF] Sending HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:08 [INF] Received HTTP response headers after 15.1018ms - 200
+2026-05-09 11:40:08 [INF] End processing HTTP request after 15.3898ms - 200
+2026-05-09 11:40:08 [INF] Executing endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:08 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(SecureAPIGateway.Models.LoginRequest) on controller SecureAPIGateway.Controllers.AuthController (SecureAPIGateway).
+2026-05-09 11:40:08 [WRN] [Auth] Failed login attempt for user: ams
+2026-05-09 11:40:08 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-09 11:40:08 [INF] Executed action SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway) in 0.438ms
+2026-05-09 11:40:08 [INF] Executed endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:08 [WRN] [Gateway] 127.0.0.1 POST /api/Auth/login → 401 (16.644ms)
+2026-05-09 11:40:08 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Auth/login - 401 null application/json; charset=utf-8 17.0075ms
+2026-05-09 11:40:08 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Auth/login - application/json 45
+2026-05-09 11:40:08 [INF] Start processing HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:08 [INF] Sending HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:08 [INF] Received HTTP response headers after 21.2742ms - 200
+2026-05-09 11:40:08 [INF] End processing HTTP request after 21.8959ms - 200
+2026-05-09 11:40:08 [INF] Executing endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:08 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(SecureAPIGateway.Models.LoginRequest) on controller SecureAPIGateway.Controllers.AuthController (SecureAPIGateway).
+2026-05-09 11:40:08 [WRN] [Auth] Failed login attempt for user: ams
+2026-05-09 11:40:08 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-09 11:40:08 [INF] Executed action SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway) in 0.6173ms
+2026-05-09 11:40:08 [INF] Executed endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:08 [WRN] [Gateway] 127.0.0.1 POST /api/Auth/login → 401 (23.606ms)
+2026-05-09 11:40:08 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Auth/login - 401 null application/json; charset=utf-8 24.04ms
+2026-05-09 11:40:09 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Auth/login - application/json 45
+2026-05-09 11:40:09 [INF] Start processing HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:09 [INF] Sending HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:09 [INF] Received HTTP response headers after 20.2728ms - 200
+2026-05-09 11:40:09 [INF] End processing HTTP request after 20.8766ms - 200
+2026-05-09 11:40:09 [INF] Executing endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:09 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(SecureAPIGateway.Models.LoginRequest) on controller SecureAPIGateway.Controllers.AuthController (SecureAPIGateway).
+2026-05-09 11:40:09 [WRN] [Auth] Failed login attempt for user: ams
+2026-05-09 11:40:09 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-09 11:40:09 [INF] Executed action SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway) in 0.5892ms
+2026-05-09 11:40:09 [INF] Executed endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:09 [WRN] [Gateway] 127.0.0.1 POST /api/Auth/login → 401 (22.762ms)
+2026-05-09 11:40:09 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Auth/login - 401 null application/json; charset=utf-8 23.3422ms
+2026-05-09 11:40:09 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Auth/login - application/json 45
+2026-05-09 11:40:09 [INF] Start processing HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:09 [INF] Sending HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:09 [INF] Received HTTP response headers after 18.2415ms - 200
+2026-05-09 11:40:09 [INF] End processing HTTP request after 18.8568ms - 200
+2026-05-09 11:40:09 [INF] Executing endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:09 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(SecureAPIGateway.Models.LoginRequest) on controller SecureAPIGateway.Controllers.AuthController (SecureAPIGateway).
+2026-05-09 11:40:09 [WRN] [Auth] Failed login attempt for user: ams
+2026-05-09 11:40:09 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-09 11:40:09 [INF] Executed action SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway) in 0.6165ms
+2026-05-09 11:40:09 [INF] Executed endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:09 [WRN] [Gateway] 127.0.0.1 POST /api/Auth/login → 401 (20.834ms)
+2026-05-09 11:40:09 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Auth/login - 401 null application/json; charset=utf-8 21.4061ms
+2026-05-09 11:40:09 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Auth/login - application/json 45
+2026-05-09 11:40:09 [INF] Start processing HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:09 [INF] Sending HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:09 [INF] Received HTTP response headers after 20.6467ms - 200
+2026-05-09 11:40:09 [INF] End processing HTTP request after 21.0829ms - 200
+2026-05-09 11:40:09 [INF] Executing endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:09 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(SecureAPIGateway.Models.LoginRequest) on controller SecureAPIGateway.Controllers.AuthController (SecureAPIGateway).
+2026-05-09 11:40:09 [WRN] [Auth] Failed login attempt for user: ams
+2026-05-09 11:40:09 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-09 11:40:09 [INF] Executed action SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway) in 0.5694ms
+2026-05-09 11:40:09 [INF] Executed endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:09 [WRN] [Gateway] 127.0.0.1 POST /api/Auth/login → 401 (22.726ms)
+2026-05-09 11:40:09 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Auth/login - 401 null application/json; charset=utf-8 23.1045ms
+2026-05-09 11:40:09 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Auth/login - application/json 45
+2026-05-09 11:40:09 [INF] Start processing HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:09 [INF] Sending HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:09 [INF] Received HTTP response headers after 20.5375ms - 200
+2026-05-09 11:40:09 [INF] End processing HTTP request after 20.9595ms - 200
+2026-05-09 11:40:09 [INF] Executing endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:09 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(SecureAPIGateway.Models.LoginRequest) on controller SecureAPIGateway.Controllers.AuthController (SecureAPIGateway).
+2026-05-09 11:40:09 [WRN] [Auth] Failed login attempt for user: ams
+2026-05-09 11:40:09 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-09 11:40:09 [INF] Executed action SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway) in 0.5933ms
+2026-05-09 11:40:09 [INF] Executed endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:09 [WRN] [Gateway] 127.0.0.1 POST /api/Auth/login → 401 (22.586ms)
+2026-05-09 11:40:09 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Auth/login - 401 null application/json; charset=utf-8 23.0551ms
+2026-05-09 11:40:09 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Auth/login - application/json 45
+2026-05-09 11:40:09 [INF] Start processing HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:09 [INF] Sending HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:09 [INF] Received HTTP response headers after 17.9365ms - 200
+2026-05-09 11:40:09 [INF] End processing HTTP request after 18.3529ms - 200
+2026-05-09 11:40:09 [INF] Executing endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:09 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(SecureAPIGateway.Models.LoginRequest) on controller SecureAPIGateway.Controllers.AuthController (SecureAPIGateway).
+2026-05-09 11:40:09 [WRN] [Auth] Failed login attempt for user: ams
+2026-05-09 11:40:09 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-09 11:40:09 [INF] Executed action SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway) in 0.5369ms
+2026-05-09 11:40:09 [INF] Executed endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:09 [WRN] [Gateway] 127.0.0.1 POST /api/Auth/login → 401 (20.036ms)
+2026-05-09 11:40:09 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Auth/login - 401 null application/json; charset=utf-8 20.4522ms
+2026-05-09 11:40:09 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Auth/login - application/json 45
+2026-05-09 11:40:09 [INF] Start processing HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:09 [INF] Sending HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:09 [INF] Received HTTP response headers after 7.1517ms - 200
+2026-05-09 11:40:09 [INF] End processing HTTP request after 7.3441ms - 200
+2026-05-09 11:40:09 [INF] Executing endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:09 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(SecureAPIGateway.Models.LoginRequest) on controller SecureAPIGateway.Controllers.AuthController (SecureAPIGateway).
+2026-05-09 11:40:09 [WRN] [Auth] Failed login attempt for user: ams
+2026-05-09 11:40:09 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-09 11:40:09 [INF] Executed action SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway) in 0.1903ms
+2026-05-09 11:40:09 [INF] Executed endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:09 [WRN] [Gateway] 127.0.0.1 POST /api/Auth/login → 401 (8.002ms)
+2026-05-09 11:40:09 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Auth/login - 401 null application/json; charset=utf-8 8.2848ms
+2026-05-09 11:40:09 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Auth/login - application/json 45
+2026-05-09 11:40:09 [INF] Start processing HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:09 [INF] Sending HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:09 [INF] Received HTTP response headers after 10.4151ms - 200
+2026-05-09 11:40:09 [INF] End processing HTTP request after 10.7477ms - 200
+2026-05-09 11:40:09 [INF] Executing endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:09 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(SecureAPIGateway.Models.LoginRequest) on controller SecureAPIGateway.Controllers.AuthController (SecureAPIGateway).
+2026-05-09 11:40:09 [WRN] [Auth] Failed login attempt for user: ams
+2026-05-09 11:40:09 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-09 11:40:09 [INF] Executed action SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway) in 0.2798ms
+2026-05-09 11:40:09 [INF] Executed endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:09 [WRN] [Gateway] 127.0.0.1 POST /api/Auth/login → 401 (11.646ms)
+2026-05-09 11:40:09 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Auth/login - 401 null application/json; charset=utf-8 12.1019ms
+2026-05-09 11:40:10 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Auth/login - application/json 45
+2026-05-09 11:40:10 [INF] Start processing HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:10 [INF] Sending HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:10 [INF] Received HTTP response headers after 6.277ms - 200
+2026-05-09 11:40:10 [INF] End processing HTTP request after 6.4293ms - 200
+2026-05-09 11:40:10 [INF] Executing endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:10 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(SecureAPIGateway.Models.LoginRequest) on controller SecureAPIGateway.Controllers.AuthController (SecureAPIGateway).
+2026-05-09 11:40:10 [WRN] [Auth] Failed login attempt for user: ams
+2026-05-09 11:40:10 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-09 11:40:10 [INF] Executed action SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway) in 0.1807ms
+2026-05-09 11:40:10 [INF] Executed endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:10 [WRN] [Gateway] 127.0.0.1 POST /api/Auth/login → 401 (6.986ms)
+2026-05-09 11:40:10 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Auth/login - 401 null application/json; charset=utf-8 7.1535ms
+2026-05-09 11:40:10 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Auth/login - application/json 45
+2026-05-09 11:40:10 [INF] Start processing HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:10 [INF] Sending HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:10 [INF] Received HTTP response headers after 6.0813ms - 200
+2026-05-09 11:40:10 [INF] End processing HTTP request after 6.228ms - 200
+2026-05-09 11:40:10 [INF] Executing endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:10 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(SecureAPIGateway.Models.LoginRequest) on controller SecureAPIGateway.Controllers.AuthController (SecureAPIGateway).
+2026-05-09 11:40:10 [WRN] [Auth] Failed login attempt for user: ams
+2026-05-09 11:40:10 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-09 11:40:10 [INF] Executed action SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway) in 0.3155ms
+2026-05-09 11:40:10 [INF] Executed endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:10 [WRN] [Gateway] 127.0.0.1 POST /api/Auth/login → 401 (6.919ms)
+2026-05-09 11:40:10 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Auth/login - 401 null application/json; charset=utf-8 7.1956ms
+2026-05-09 11:40:10 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Auth/login - application/json 45
+2026-05-09 11:40:10 [INF] Start processing HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:10 [INF] Sending HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:10 [INF] Received HTTP response headers after 15.0773ms - 200
+2026-05-09 11:40:10 [INF] End processing HTTP request after 15.4731ms - 200
+2026-05-09 11:40:10 [INF] Executing endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:10 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(SecureAPIGateway.Models.LoginRequest) on controller SecureAPIGateway.Controllers.AuthController (SecureAPIGateway).
+2026-05-09 11:40:10 [WRN] [Auth] Failed login attempt for user: ams
+2026-05-09 11:40:10 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-09 11:40:10 [INF] Executed action SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway) in 0.3469ms
+2026-05-09 11:40:10 [INF] Executed endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:10 [WRN] [Gateway] 127.0.0.1 POST /api/Auth/login → 401 (16.67ms)
+2026-05-09 11:40:10 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Auth/login - 401 null application/json; charset=utf-8 17.0627ms
+2026-05-09 11:40:10 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Auth/login - application/json 45
+2026-05-09 11:40:10 [INF] Start processing HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:10 [INF] Sending HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:10 [INF] Received HTTP response headers after 21.6785ms - 200
+2026-05-09 11:40:10 [INF] End processing HTTP request after 22.2447ms - 200
+2026-05-09 11:40:10 [INF] Executing endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:10 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(SecureAPIGateway.Models.LoginRequest) on controller SecureAPIGateway.Controllers.AuthController (SecureAPIGateway).
+2026-05-09 11:40:10 [WRN] [Auth] Failed login attempt for user: ams
+2026-05-09 11:40:10 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-09 11:40:10 [INF] Executed action SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway) in 0.4244ms
+2026-05-09 11:40:10 [INF] Executed endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:10 [WRN] [Gateway] 127.0.0.1 POST /api/Auth/login → 401 (23.565ms)
+2026-05-09 11:40:10 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Auth/login - 401 null application/json; charset=utf-8 24.0702ms
+2026-05-09 11:40:12 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Auth/login - application/json 45
+2026-05-09 11:40:12 [INF] Start processing HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:12 [INF] Sending HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:12 [INF] Received HTTP response headers after 20.6957ms - 200
+2026-05-09 11:40:12 [INF] End processing HTTP request after 21.458ms - 200
+2026-05-09 11:40:12 [INF] Executing endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:12 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(SecureAPIGateway.Models.LoginRequest) on controller SecureAPIGateway.Controllers.AuthController (SecureAPIGateway).
+2026-05-09 11:40:12 [WRN] [Auth] Failed login attempt for user: ams
+2026-05-09 11:40:12 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-09 11:40:12 [INF] Executed action SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway) in 0.3543ms
+2026-05-09 11:40:12 [INF] Executed endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:12 [WRN] [Gateway] 127.0.0.1 POST /api/Auth/login → 401 (22.941ms)
+2026-05-09 11:40:12 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Auth/login - 401 null application/json; charset=utf-8 23.6669ms
+2026-05-09 11:40:12 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Auth/login - application/json 45
+2026-05-09 11:40:12 [INF] Start processing HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:12 [INF] Sending HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:12 [INF] Received HTTP response headers after 20.7797ms - 200
+2026-05-09 11:40:12 [INF] End processing HTTP request after 21.16ms - 200
+2026-05-09 11:40:12 [INF] Executing endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:12 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(SecureAPIGateway.Models.LoginRequest) on controller SecureAPIGateway.Controllers.AuthController (SecureAPIGateway).
+2026-05-09 11:40:12 [WRN] [Auth] Failed login attempt for user: ams
+2026-05-09 11:40:12 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-09 11:40:12 [INF] Executed action SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway) in 0.3877ms
+2026-05-09 11:40:12 [INF] Executed endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:12 [WRN] [Gateway] 127.0.0.1 POST /api/Auth/login → 401 (22.527ms)
+2026-05-09 11:40:12 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Auth/login - 401 null application/json; charset=utf-8 23.0545ms
+2026-05-09 11:40:12 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Auth/login - application/json 45
+2026-05-09 11:40:12 [INF] Start processing HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:12 [INF] Sending HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:12 [INF] Received HTTP response headers after 21.1962ms - 200
+2026-05-09 11:40:12 [INF] End processing HTTP request after 21.623ms - 200
+2026-05-09 11:40:12 [INF] Executing endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:12 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(SecureAPIGateway.Models.LoginRequest) on controller SecureAPIGateway.Controllers.AuthController (SecureAPIGateway).
+2026-05-09 11:40:12 [WRN] [Auth] Failed login attempt for user: ams
+2026-05-09 11:40:12 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-09 11:40:12 [INF] Executed action SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway) in 0.3919ms
+2026-05-09 11:40:12 [INF] Executed endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:12 [WRN] [Gateway] 127.0.0.1 POST /api/Auth/login → 401 (22.835ms)
+2026-05-09 11:40:12 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Auth/login - 401 null application/json; charset=utf-8 23.2561ms
+2026-05-09 11:40:12 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Auth/login - application/json 45
+2026-05-09 11:40:12 [INF] Start processing HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:12 [INF] Sending HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:12 [INF] Received HTTP response headers after 21.0444ms - 200
+2026-05-09 11:40:12 [INF] End processing HTTP request after 21.5195ms - 200
+2026-05-09 11:40:12 [INF] Executing endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:12 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(SecureAPIGateway.Models.LoginRequest) on controller SecureAPIGateway.Controllers.AuthController (SecureAPIGateway).
+2026-05-09 11:40:12 [WRN] [Auth] Failed login attempt for user: ams
+2026-05-09 11:40:12 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-09 11:40:12 [INF] Executed action SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway) in 0.4487ms
+2026-05-09 11:40:12 [INF] Executed endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:12 [WRN] [Gateway] 127.0.0.1 POST /api/Auth/login → 401 (22.883ms)
+2026-05-09 11:40:12 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Auth/login - 401 null application/json; charset=utf-8 23.3705ms
+2026-05-09 11:40:12 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Auth/login - application/json 45
+2026-05-09 11:40:12 [INF] Start processing HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:12 [INF] Sending HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:12 [INF] Received HTTP response headers after 19.1716ms - 200
+2026-05-09 11:40:12 [INF] End processing HTTP request after 19.7234ms - 200
+2026-05-09 11:40:12 [INF] Executing endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:12 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(SecureAPIGateway.Models.LoginRequest) on controller SecureAPIGateway.Controllers.AuthController (SecureAPIGateway).
+2026-05-09 11:40:12 [WRN] [Auth] Failed login attempt for user: ams
+2026-05-09 11:40:12 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-09 11:40:12 [INF] Executed action SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway) in 0.4893ms
+2026-05-09 11:40:12 [INF] Executed endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:12 [WRN] [Gateway] 127.0.0.1 POST /api/Auth/login → 401 (21.169ms)
+2026-05-09 11:40:12 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Auth/login - 401 null application/json; charset=utf-8 21.6732ms
+2026-05-09 11:40:12 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Auth/login - application/json 45
+2026-05-09 11:40:12 [INF] Start processing HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:12 [INF] Sending HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:13 [INF] Received HTTP response headers after 18.9935ms - 200
+2026-05-09 11:40:13 [INF] End processing HTTP request after 19.5095ms - 200
+2026-05-09 11:40:13 [INF] Executing endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:13 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(SecureAPIGateway.Models.LoginRequest) on controller SecureAPIGateway.Controllers.AuthController (SecureAPIGateway).
+2026-05-09 11:40:13 [WRN] [Auth] Failed login attempt for user: ams
+2026-05-09 11:40:13 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-09 11:40:13 [INF] Executed action SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway) in 0.3966ms
+2026-05-09 11:40:13 [INF] Executed endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:13 [WRN] [Gateway] 127.0.0.1 POST /api/Auth/login → 401 (20.827ms)
+2026-05-09 11:40:13 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Auth/login - 401 null application/json; charset=utf-8 21.2982ms
+2026-05-09 11:40:13 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Auth/login - application/json 45
+2026-05-09 11:40:13 [INF] Start processing HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:13 [INF] Sending HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:13 [INF] Received HTTP response headers after 20.9075ms - 200
+2026-05-09 11:40:13 [INF] End processing HTTP request after 21.3647ms - 200
+2026-05-09 11:40:13 [INF] Executing endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:13 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(SecureAPIGateway.Models.LoginRequest) on controller SecureAPIGateway.Controllers.AuthController (SecureAPIGateway).
+2026-05-09 11:40:13 [WRN] [Auth] Failed login attempt for user: ams
+2026-05-09 11:40:13 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-09 11:40:13 [INF] Executed action SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway) in 0.4656ms
+2026-05-09 11:40:13 [INF] Executed endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:13 [WRN] [Gateway] 127.0.0.1 POST /api/Auth/login → 401 (22.976ms)
+2026-05-09 11:40:13 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Auth/login - 401 null application/json; charset=utf-8 23.391ms
+2026-05-09 11:40:13 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Auth/login - application/json 45
+2026-05-09 11:40:13 [INF] Start processing HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:13 [INF] Sending HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:13 [INF] Received HTTP response headers after 21.9933ms - 200
+2026-05-09 11:40:13 [INF] End processing HTTP request after 22.5095ms - 200
+2026-05-09 11:40:13 [INF] Executing endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:13 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(SecureAPIGateway.Models.LoginRequest) on controller SecureAPIGateway.Controllers.AuthController (SecureAPIGateway).
+2026-05-09 11:40:13 [WRN] [Auth] Failed login attempt for user: ams
+2026-05-09 11:40:13 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-09 11:40:13 [INF] Executed action SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway) in 0.4275ms
+2026-05-09 11:40:13 [INF] Executed endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:13 [WRN] [Gateway] 127.0.0.1 POST /api/Auth/login → 401 (23.877ms)
+2026-05-09 11:40:13 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Auth/login - 401 null application/json; charset=utf-8 24.3359ms
+2026-05-09 11:40:13 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Auth/login - application/json 45
+2026-05-09 11:40:13 [INF] Start processing HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:13 [INF] Sending HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:13 [INF] Received HTTP response headers after 20.6395ms - 200
+2026-05-09 11:40:13 [INF] End processing HTTP request after 21.1175ms - 200
+2026-05-09 11:40:13 [INF] Executing endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:13 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(SecureAPIGateway.Models.LoginRequest) on controller SecureAPIGateway.Controllers.AuthController (SecureAPIGateway).
+2026-05-09 11:40:13 [WRN] [Auth] Failed login attempt for user: ams
+2026-05-09 11:40:13 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-09 11:40:13 [INF] Executed action SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway) in 0.3915ms
+2026-05-09 11:40:13 [INF] Executed endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:13 [WRN] [Gateway] 127.0.0.1 POST /api/Auth/login → 401 (22.447ms)
+2026-05-09 11:40:13 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Auth/login - 401 null application/json; charset=utf-8 22.934ms
+2026-05-09 11:40:13 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Auth/login - application/json 45
+2026-05-09 11:40:13 [INF] Start processing HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:13 [INF] Sending HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:13 [INF] Received HTTP response headers after 18.7416ms - 200
+2026-05-09 11:40:13 [INF] End processing HTTP request after 19.2897ms - 200
+2026-05-09 11:40:13 [INF] Executing endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:13 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(SecureAPIGateway.Models.LoginRequest) on controller SecureAPIGateway.Controllers.AuthController (SecureAPIGateway).
+2026-05-09 11:40:13 [WRN] [Auth] Failed login attempt for user: ams
+2026-05-09 11:40:13 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-09 11:40:13 [INF] Executed action SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway) in 0.4278ms
+2026-05-09 11:40:13 [INF] Executed endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:13 [WRN] [Gateway] 127.0.0.1 POST /api/Auth/login → 401 (20.605ms)
+2026-05-09 11:40:13 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Auth/login - 401 null application/json; charset=utf-8 21.1561ms
+2026-05-09 11:40:13 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Auth/login - application/json 45
+2026-05-09 11:40:13 [INF] Start processing HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:13 [INF] Sending HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:13 [INF] Received HTTP response headers after 21.5184ms - 200
+2026-05-09 11:40:13 [INF] End processing HTTP request after 22.1614ms - 200
+2026-05-09 11:40:13 [INF] Executing endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:13 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(SecureAPIGateway.Models.LoginRequest) on controller SecureAPIGateway.Controllers.AuthController (SecureAPIGateway).
+2026-05-09 11:40:13 [WRN] [Auth] Failed login attempt for user: ams
+2026-05-09 11:40:13 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-09 11:40:13 [INF] Executed action SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway) in 0.4049ms
+2026-05-09 11:40:13 [INF] Executed endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:13 [WRN] [Gateway] 127.0.0.1 POST /api/Auth/login → 401 (23.549ms)
+2026-05-09 11:40:13 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Auth/login - 401 null application/json; charset=utf-8 24.0768ms
+2026-05-09 11:40:13 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Auth/login - application/json 45
+2026-05-09 11:40:13 [INF] Start processing HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:13 [INF] Sending HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:13 [INF] Received HTTP response headers after 19.3538ms - 200
+2026-05-09 11:40:13 [INF] End processing HTTP request after 19.9087ms - 200
+2026-05-09 11:40:13 [INF] Executing endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:13 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(SecureAPIGateway.Models.LoginRequest) on controller SecureAPIGateway.Controllers.AuthController (SecureAPIGateway).
+2026-05-09 11:40:13 [WRN] [Auth] Failed login attempt for user: ams
+2026-05-09 11:40:13 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-09 11:40:13 [INF] Executed action SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway) in 0.4157ms
+2026-05-09 11:40:13 [INF] Executed endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:13 [WRN] [Gateway] 127.0.0.1 POST /api/Auth/login → 401 (21.374ms)
+2026-05-09 11:40:13 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Auth/login - 401 null application/json; charset=utf-8 21.8599ms
+2026-05-09 11:40:14 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Auth/login - application/json 45
+2026-05-09 11:40:14 [INF] Start processing HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:14 [INF] Sending HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:14 [INF] Received HTTP response headers after 19.2159ms - 200
+2026-05-09 11:40:14 [INF] End processing HTTP request after 19.7218ms - 200
+2026-05-09 11:40:14 [INF] Executing endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:14 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(SecureAPIGateway.Models.LoginRequest) on controller SecureAPIGateway.Controllers.AuthController (SecureAPIGateway).
+2026-05-09 11:40:14 [WRN] [Auth] Failed login attempt for user: ams
+2026-05-09 11:40:14 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-09 11:40:14 [INF] Executed action SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway) in 0.4048ms
+2026-05-09 11:40:14 [INF] Executed endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:14 [WRN] [Gateway] 127.0.0.1 POST /api/Auth/login → 401 (21.242ms)
+2026-05-09 11:40:14 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Auth/login - 401 null application/json; charset=utf-8 21.7286ms
+2026-05-09 11:40:14 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Auth/login - application/json 45
+2026-05-09 11:40:14 [INF] Start processing HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:14 [INF] Sending HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:14 [INF] Received HTTP response headers after 19.7187ms - 200
+2026-05-09 11:40:14 [INF] End processing HTTP request after 20.1775ms - 200
+2026-05-09 11:40:14 [INF] Executing endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:14 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(SecureAPIGateway.Models.LoginRequest) on controller SecureAPIGateway.Controllers.AuthController (SecureAPIGateway).
+2026-05-09 11:40:14 [WRN] [Auth] Failed login attempt for user: ams
+2026-05-09 11:40:14 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-09 11:40:14 [INF] Executed action SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway) in 0.4052ms
+2026-05-09 11:40:14 [INF] Executed endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:14 [WRN] [Gateway] 127.0.0.1 POST /api/Auth/login → 401 (21.404ms)
+2026-05-09 11:40:14 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Auth/login - 401 null application/json; charset=utf-8 21.8003ms
+2026-05-09 11:40:14 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Auth/login - application/json 45
+2026-05-09 11:40:14 [INF] Start processing HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:14 [INF] Sending HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:14 [INF] Received HTTP response headers after 20.8875ms - 200
+2026-05-09 11:40:14 [INF] End processing HTTP request after 21.5117ms - 200
+2026-05-09 11:40:14 [INF] Executing endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:14 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(SecureAPIGateway.Models.LoginRequest) on controller SecureAPIGateway.Controllers.AuthController (SecureAPIGateway).
+2026-05-09 11:40:14 [WRN] [Auth] Failed login attempt for user: ams
+2026-05-09 11:40:14 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-09 11:40:14 [INF] Executed action SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway) in 0.4349ms
+2026-05-09 11:40:14 [INF] Executed endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:14 [WRN] [Gateway] 127.0.0.1 POST /api/Auth/login → 401 (23.204ms)
+2026-05-09 11:40:14 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Auth/login - 401 null application/json; charset=utf-8 23.7087ms
+2026-05-09 11:40:14 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Auth/login - application/json 45
+2026-05-09 11:40:14 [INF] Start processing HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:14 [INF] Sending HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:14 [INF] Received HTTP response headers after 18.8901ms - 200
+2026-05-09 11:40:14 [INF] End processing HTTP request after 19.5632ms - 200
+2026-05-09 11:40:14 [INF] Executing endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:14 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(SecureAPIGateway.Models.LoginRequest) on controller SecureAPIGateway.Controllers.AuthController (SecureAPIGateway).
+2026-05-09 11:40:14 [WRN] [Auth] Failed login attempt for user: ams
+2026-05-09 11:40:14 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-09 11:40:14 [INF] Executed action SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway) in 0.4146ms
+2026-05-09 11:40:14 [INF] Executed endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:14 [WRN] [Gateway] 127.0.0.1 POST /api/Auth/login → 401 (20.933ms)
+2026-05-09 11:40:14 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Auth/login - 401 null application/json; charset=utf-8 21.4668ms
+2026-05-09 11:40:14 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Auth/login - application/json 45
+2026-05-09 11:40:14 [INF] Start processing HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:14 [INF] Sending HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:14 [INF] Received HTTP response headers after 18.9338ms - 200
+2026-05-09 11:40:14 [INF] End processing HTTP request after 19.3491ms - 200
+2026-05-09 11:40:14 [INF] Executing endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:14 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(SecureAPIGateway.Models.LoginRequest) on controller SecureAPIGateway.Controllers.AuthController (SecureAPIGateway).
+2026-05-09 11:40:14 [WRN] [Auth] Failed login attempt for user: ams
+2026-05-09 11:40:14 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-09 11:40:14 [INF] Executed action SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway) in 0.5022ms
+2026-05-09 11:40:14 [INF] Executed endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:14 [WRN] [Gateway] 127.0.0.1 POST /api/Auth/login → 401 (20.773ms)
+2026-05-09 11:40:14 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Auth/login - 401 null application/json; charset=utf-8 21.1674ms
+2026-05-09 11:40:14 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Auth/login - application/json 45
+2026-05-09 11:40:14 [INF] Start processing HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:14 [INF] Sending HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:14 [INF] Received HTTP response headers after 21.6965ms - 200
+2026-05-09 11:40:14 [INF] End processing HTTP request after 22.1388ms - 200
+2026-05-09 11:40:14 [INF] Executing endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:14 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(SecureAPIGateway.Models.LoginRequest) on controller SecureAPIGateway.Controllers.AuthController (SecureAPIGateway).
+2026-05-09 11:40:14 [WRN] [Auth] Failed login attempt for user: ams
+2026-05-09 11:40:14 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-09 11:40:14 [INF] Executed action SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway) in 0.4131ms
+2026-05-09 11:40:14 [INF] Executed endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:14 [WRN] [Gateway] 127.0.0.1 POST /api/Auth/login → 401 (23.537ms)
+2026-05-09 11:40:14 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Auth/login - 401 null application/json; charset=utf-8 24.0248ms
+2026-05-09 11:40:14 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Auth/login - application/json 45
+2026-05-09 11:40:14 [INF] Start processing HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:14 [INF] Sending HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:14 [INF] Received HTTP response headers after 19.8713ms - 200
+2026-05-09 11:40:14 [INF] End processing HTTP request after 20.316ms - 200
+2026-05-09 11:40:14 [INF] Executing endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:14 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(SecureAPIGateway.Models.LoginRequest) on controller SecureAPIGateway.Controllers.AuthController (SecureAPIGateway).
+2026-05-09 11:40:14 [WRN] [Auth] Failed login attempt for user: ams
+2026-05-09 11:40:14 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-09 11:40:14 [INF] Executed action SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway) in 0.4977ms
+2026-05-09 11:40:14 [INF] Executed endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:14 [WRN] [Gateway] 127.0.0.1 POST /api/Auth/login → 401 (21.868ms)
+2026-05-09 11:40:14 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Auth/login - 401 null application/json; charset=utf-8 22.2768ms
+2026-05-09 11:40:15 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Auth/login - application/json 45
+2026-05-09 11:40:15 [INF] Start processing HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:15 [INF] Sending HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:15 [INF] Received HTTP response headers after 19.6528ms - 200
+2026-05-09 11:40:15 [INF] End processing HTTP request after 20.1091ms - 200
+2026-05-09 11:40:15 [INF] Executing endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:15 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(SecureAPIGateway.Models.LoginRequest) on controller SecureAPIGateway.Controllers.AuthController (SecureAPIGateway).
+2026-05-09 11:40:15 [WRN] [Auth] Failed login attempt for user: ams
+2026-05-09 11:40:15 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-09 11:40:15 [INF] Executed action SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway) in 0.4441ms
+2026-05-09 11:40:15 [INF] Executed endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:15 [WRN] [Gateway] 127.0.0.1 POST /api/Auth/login → 401 (21.524ms)
+2026-05-09 11:40:15 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Auth/login - 401 null application/json; charset=utf-8 21.9302ms
+2026-05-09 11:40:15 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Auth/login - application/json 45
+2026-05-09 11:40:15 [INF] Start processing HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:15 [INF] Sending HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:15 [INF] Received HTTP response headers after 19.0692ms - 200
+2026-05-09 11:40:15 [INF] End processing HTTP request after 19.3858ms - 200
+2026-05-09 11:40:15 [INF] Executing endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:15 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(SecureAPIGateway.Models.LoginRequest) on controller SecureAPIGateway.Controllers.AuthController (SecureAPIGateway).
+2026-05-09 11:40:15 [WRN] [Auth] Failed login attempt for user: ams
+2026-05-09 11:40:15 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-09 11:40:15 [INF] Executed action SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway) in 0.2648ms
+2026-05-09 11:40:15 [INF] Executed endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:15 [WRN] [Gateway] 127.0.0.1 POST /api/Auth/login → 401 (20.281ms)
+2026-05-09 11:40:15 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Auth/login - 401 null application/json; charset=utf-8 20.6187ms
+2026-05-09 11:40:15 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Auth/login - application/json 45
+2026-05-09 11:40:15 [INF] Start processing HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:15 [INF] Sending HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:15 [INF] Received HTTP response headers after 19.1325ms - 200
+2026-05-09 11:40:15 [INF] End processing HTTP request after 19.619ms - 200
+2026-05-09 11:40:15 [INF] Executing endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:15 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(SecureAPIGateway.Models.LoginRequest) on controller SecureAPIGateway.Controllers.AuthController (SecureAPIGateway).
+2026-05-09 11:40:15 [WRN] [Auth] Failed login attempt for user: ams
+2026-05-09 11:40:15 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-09 11:40:15 [INF] Executed action SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway) in 0.4218ms
+2026-05-09 11:40:15 [INF] Executed endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:15 [WRN] [Gateway] 127.0.0.1 POST /api/Auth/login → 401 (20.928ms)
+2026-05-09 11:40:15 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Auth/login - 401 null application/json; charset=utf-8 21.304ms
+2026-05-09 11:40:15 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Auth/login - application/json 45
+2026-05-09 11:40:15 [INF] Start processing HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:15 [INF] Sending HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:15 [INF] Received HTTP response headers after 18.6522ms - 200
+2026-05-09 11:40:15 [INF] End processing HTTP request after 19.0955ms - 200
+2026-05-09 11:40:15 [INF] Executing endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:15 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(SecureAPIGateway.Models.LoginRequest) on controller SecureAPIGateway.Controllers.AuthController (SecureAPIGateway).
+2026-05-09 11:40:15 [WRN] [Auth] Failed login attempt for user: ams
+2026-05-09 11:40:15 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-09 11:40:15 [INF] Executed action SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway) in 0.4335ms
+2026-05-09 11:40:15 [INF] Executed endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:15 [WRN] [Gateway] 127.0.0.1 POST /api/Auth/login → 401 (20.331ms)
+2026-05-09 11:40:15 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Auth/login - 401 null application/json; charset=utf-8 20.6777ms
+2026-05-09 11:40:15 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Auth/login - application/json 45
+2026-05-09 11:40:15 [INF] Start processing HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:15 [INF] Sending HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:15 [INF] Received HTTP response headers after 19.7437ms - 200
+2026-05-09 11:40:15 [INF] End processing HTTP request after 20.184ms - 200
+2026-05-09 11:40:15 [INF] Executing endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:15 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(SecureAPIGateway.Models.LoginRequest) on controller SecureAPIGateway.Controllers.AuthController (SecureAPIGateway).
+2026-05-09 11:40:15 [WRN] [Auth] Failed login attempt for user: ams
+2026-05-09 11:40:15 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-09 11:40:15 [INF] Executed action SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway) in 0.425ms
+2026-05-09 11:40:15 [INF] Executed endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:15 [WRN] [Gateway] 127.0.0.1 POST /api/Auth/login → 401 (21.523ms)
+2026-05-09 11:40:15 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Auth/login - 401 null application/json; charset=utf-8 22.0412ms
+2026-05-09 11:40:15 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Auth/login - application/json 45
+2026-05-09 11:40:15 [INF] Start processing HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:15 [INF] Sending HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:15 [INF] Received HTTP response headers after 8.8862ms - 200
+2026-05-09 11:40:15 [INF] End processing HTTP request after 9.152ms - 200
+2026-05-09 11:40:15 [INF] Executing endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:15 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(SecureAPIGateway.Models.LoginRequest) on controller SecureAPIGateway.Controllers.AuthController (SecureAPIGateway).
+2026-05-09 11:40:15 [WRN] [Auth] Failed login attempt for user: ams
+2026-05-09 11:40:15 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-09 11:40:15 [INF] Executed action SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway) in 0.1519ms
+2026-05-09 11:40:15 [INF] Executed endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:15 [WRN] [Gateway] 127.0.0.1 POST /api/Auth/login → 401 (9.67ms)
+2026-05-09 11:40:15 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Auth/login - 401 null application/json; charset=utf-8 9.9273ms
+2026-05-09 11:40:16 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Auth/login - application/json 45
+2026-05-09 11:40:16 [INF] Start processing HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:16 [INF] Sending HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:16 [INF] Received HTTP response headers after 20.5127ms - 200
+2026-05-09 11:40:16 [INF] End processing HTTP request after 20.9317ms - 200
+2026-05-09 11:40:16 [INF] Executing endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:16 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(SecureAPIGateway.Models.LoginRequest) on controller SecureAPIGateway.Controllers.AuthController (SecureAPIGateway).
+2026-05-09 11:40:16 [WRN] [Auth] Failed login attempt for user: ams
+2026-05-09 11:40:16 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-09 11:40:16 [INF] Executed action SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway) in 0.2535ms
+2026-05-09 11:40:16 [INF] Executed endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:16 [WRN] [Gateway] 127.0.0.1 POST /api/Auth/login → 401 (22.162ms)
+2026-05-09 11:40:16 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Auth/login - 401 null application/json; charset=utf-8 22.6171ms
+2026-05-09 11:40:16 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Auth/login - application/json 45
+2026-05-09 11:40:16 [INF] Start processing HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:16 [INF] Sending HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:16 [INF] Received HTTP response headers after 8.2834ms - 200
+2026-05-09 11:40:16 [INF] End processing HTTP request after 8.4986ms - 200
+2026-05-09 11:40:16 [INF] Executing endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:16 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(SecureAPIGateway.Models.LoginRequest) on controller SecureAPIGateway.Controllers.AuthController (SecureAPIGateway).
+2026-05-09 11:40:16 [WRN] [Auth] Failed login attempt for user: ams
+2026-05-09 11:40:16 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-09 11:40:16 [INF] Executed action SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway) in 0.1679ms
+2026-05-09 11:40:16 [INF] Executed endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:16 [WRN] [Gateway] 127.0.0.1 POST /api/Auth/login → 401 (9.077ms)
+2026-05-09 11:40:16 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Auth/login - 401 null application/json; charset=utf-8 9.3145ms
+2026-05-09 11:40:16 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Auth/login - application/json 45
+2026-05-09 11:40:16 [INF] Start processing HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:16 [INF] Sending HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:16 [INF] Received HTTP response headers after 6.019ms - 200
+2026-05-09 11:40:16 [INF] End processing HTTP request after 6.1685ms - 200
+2026-05-09 11:40:16 [INF] Executing endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:16 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(SecureAPIGateway.Models.LoginRequest) on controller SecureAPIGateway.Controllers.AuthController (SecureAPIGateway).
+2026-05-09 11:40:16 [WRN] [Auth] Failed login attempt for user: ams
+2026-05-09 11:40:16 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-09 11:40:16 [INF] Executed action SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway) in 0.1137ms
+2026-05-09 11:40:16 [INF] Executed endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:16 [WRN] [Gateway] 127.0.0.1 POST /api/Auth/login → 401 (6.548ms)
+2026-05-09 11:40:16 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Auth/login - 401 null application/json; charset=utf-8 6.7527ms
+2026-05-09 11:40:16 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Auth/login - application/json 45
+2026-05-09 11:40:16 [INF] Start processing HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:16 [INF] Sending HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:16 [INF] Received HTTP response headers after 14.1928ms - 200
+2026-05-09 11:40:16 [INF] End processing HTTP request after 14.5371ms - 200
+2026-05-09 11:40:16 [INF] Executing endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:16 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(SecureAPIGateway.Models.LoginRequest) on controller SecureAPIGateway.Controllers.AuthController (SecureAPIGateway).
+2026-05-09 11:40:16 [WRN] [Auth] Failed login attempt for user: ams
+2026-05-09 11:40:16 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-09 11:40:16 [INF] Executed action SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway) in 0.2408ms
+2026-05-09 11:40:16 [INF] Executed endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:16 [WRN] [Gateway] 127.0.0.1 POST /api/Auth/login → 401 (15.329ms)
+2026-05-09 11:40:16 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Auth/login - 401 null application/json; charset=utf-8 15.6917ms
+2026-05-09 11:40:16 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Auth/login - application/json 45
+2026-05-09 11:40:16 [INF] Start processing HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:16 [INF] Sending HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:16 [INF] Received HTTP response headers after 21.4996ms - 200
+2026-05-09 11:40:16 [INF] End processing HTTP request after 21.9455ms - 200
+2026-05-09 11:40:16 [INF] Executing endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:16 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(SecureAPIGateway.Models.LoginRequest) on controller SecureAPIGateway.Controllers.AuthController (SecureAPIGateway).
+2026-05-09 11:40:16 [WRN] [Auth] Failed login attempt for user: ams
+2026-05-09 11:40:16 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-09 11:40:16 [INF] Executed action SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway) in 0.3356ms
+2026-05-09 11:40:16 [INF] Executed endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:16 [WRN] [Gateway] 127.0.0.1 POST /api/Auth/login → 401 (23.063ms)
+2026-05-09 11:40:16 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Auth/login - 401 null application/json; charset=utf-8 23.5203ms
+2026-05-09 11:40:16 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Auth/login - application/json 45
+2026-05-09 11:40:16 [INF] Start processing HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:16 [INF] Sending HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:16 [INF] Received HTTP response headers after 19.9269ms - 200
+2026-05-09 11:40:16 [INF] End processing HTTP request after 20.433ms - 200
+2026-05-09 11:40:16 [INF] Executing endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:16 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(SecureAPIGateway.Models.LoginRequest) on controller SecureAPIGateway.Controllers.AuthController (SecureAPIGateway).
+2026-05-09 11:40:16 [WRN] [Auth] Failed login attempt for user: ams
+2026-05-09 11:40:16 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-09 11:40:16 [INF] Executed action SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway) in 0.3142ms
+2026-05-09 11:40:16 [INF] Executed endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:16 [WRN] [Gateway] 127.0.0.1 POST /api/Auth/login → 401 (21.488ms)
+2026-05-09 11:40:16 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Auth/login - 401 null application/json; charset=utf-8 21.9498ms
+2026-05-09 11:40:17 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Auth/login - application/json 45
+2026-05-09 11:40:17 [INF] Start processing HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:17 [INF] Sending HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:17 [INF] Received HTTP response headers after 20.5722ms - 200
+2026-05-09 11:40:17 [INF] End processing HTTP request after 20.9913ms - 200
+2026-05-09 11:40:17 [INF] Executing endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:17 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(SecureAPIGateway.Models.LoginRequest) on controller SecureAPIGateway.Controllers.AuthController (SecureAPIGateway).
+2026-05-09 11:40:17 [WRN] [Auth] Failed login attempt for user: ams
+2026-05-09 11:40:17 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-09 11:40:17 [INF] Executed action SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway) in 0.3153ms
+2026-05-09 11:40:17 [INF] Executed endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:17 [WRN] [Gateway] 127.0.0.1 POST /api/Auth/login → 401 (22.078ms)
+2026-05-09 11:40:17 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Auth/login - 401 null application/json; charset=utf-8 22.545ms
+2026-05-09 11:40:17 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Auth/login - application/json 45
+2026-05-09 11:40:17 [INF] Start processing HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:17 [INF] Sending HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:17 [INF] Received HTTP response headers after 21.0246ms - 200
+2026-05-09 11:40:17 [INF] End processing HTTP request after 21.6357ms - 200
+2026-05-09 11:40:17 [INF] Executing endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:17 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(SecureAPIGateway.Models.LoginRequest) on controller SecureAPIGateway.Controllers.AuthController (SecureAPIGateway).
+2026-05-09 11:40:17 [WRN] [Auth] Failed login attempt for user: ams
+2026-05-09 11:40:17 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-09 11:40:17 [INF] Executed action SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway) in 0.3071ms
+2026-05-09 11:40:17 [INF] Executed endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:17 [WRN] [Gateway] 127.0.0.1 POST /api/Auth/login → 401 (22.697ms)
+2026-05-09 11:40:17 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Auth/login - 401 null application/json; charset=utf-8 23.1697ms
+2026-05-09 11:40:17 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Auth/login - application/json 45
+2026-05-09 11:40:17 [INF] Start processing HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:17 [INF] Sending HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:17 [INF] Received HTTP response headers after 18.9365ms - 200
+2026-05-09 11:40:17 [INF] End processing HTTP request after 19.399ms - 200
+2026-05-09 11:40:17 [INF] Executing endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:17 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(SecureAPIGateway.Models.LoginRequest) on controller SecureAPIGateway.Controllers.AuthController (SecureAPIGateway).
+2026-05-09 11:40:17 [WRN] [Auth] Failed login attempt for user: ams
+2026-05-09 11:40:17 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-09 11:40:17 [INF] Executed action SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway) in 0.3498ms
+2026-05-09 11:40:17 [INF] Executed endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:17 [WRN] [Gateway] 127.0.0.1 POST /api/Auth/login → 401 (20.657ms)
+2026-05-09 11:40:17 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Auth/login - 401 null application/json; charset=utf-8 21.13ms
+2026-05-09 11:40:17 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Auth/login - application/json 45
+2026-05-09 11:40:17 [INF] Start processing HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:17 [INF] Sending HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:17 [INF] Received HTTP response headers after 20.8037ms - 200
+2026-05-09 11:40:17 [INF] End processing HTTP request after 21.3062ms - 200
+2026-05-09 11:40:17 [INF] Executing endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:17 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(SecureAPIGateway.Models.LoginRequest) on controller SecureAPIGateway.Controllers.AuthController (SecureAPIGateway).
+2026-05-09 11:40:17 [WRN] [Auth] Failed login attempt for user: ams
+2026-05-09 11:40:17 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-09 11:40:17 [INF] Executed action SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway) in 0.4057ms
+2026-05-09 11:40:17 [INF] Executed endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:17 [WRN] [Gateway] 127.0.0.1 POST /api/Auth/login → 401 (22.545ms)
+2026-05-09 11:40:17 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Auth/login - 401 null application/json; charset=utf-8 23.0379ms
+2026-05-09 11:40:17 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Auth/login - application/json 45
+2026-05-09 11:40:17 [INF] Start processing HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:17 [INF] Sending HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:17 [INF] Received HTTP response headers after 19.4261ms - 200
+2026-05-09 11:40:17 [INF] End processing HTTP request after 19.8621ms - 200
+2026-05-09 11:40:17 [INF] Executing endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:17 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(SecureAPIGateway.Models.LoginRequest) on controller SecureAPIGateway.Controllers.AuthController (SecureAPIGateway).
+2026-05-09 11:40:17 [WRN] [Auth] Failed login attempt for user: ams
+2026-05-09 11:40:17 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-09 11:40:17 [INF] Executed action SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway) in 0.3615ms
+2026-05-09 11:40:17 [INF] Executed endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:17 [WRN] [Gateway] 127.0.0.1 POST /api/Auth/login → 401 (20.967ms)
+2026-05-09 11:40:17 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Auth/login - 401 null application/json; charset=utf-8 21.4807ms
+2026-05-09 11:40:17 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Auth/login - application/json 45
+2026-05-09 11:40:17 [INF] Start processing HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:17 [INF] Sending HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:17 [INF] Received HTTP response headers after 21.0487ms - 200
+2026-05-09 11:40:17 [INF] End processing HTTP request after 21.5292ms - 200
+2026-05-09 11:40:17 [INF] Executing endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:17 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(SecureAPIGateway.Models.LoginRequest) on controller SecureAPIGateway.Controllers.AuthController (SecureAPIGateway).
+2026-05-09 11:40:17 [WRN] [Auth] Failed login attempt for user: ams
+2026-05-09 11:40:17 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-09 11:40:17 [INF] Executed action SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway) in 0.3327ms
+2026-05-09 11:40:17 [INF] Executed endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:17 [WRN] [Gateway] 127.0.0.1 POST /api/Auth/login → 401 (22.653ms)
+2026-05-09 11:40:17 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Auth/login - 401 null application/json; charset=utf-8 23.1303ms
+2026-05-09 11:40:17 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Auth/login - application/json 45
+2026-05-09 11:40:17 [INF] Start processing HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:17 [INF] Sending HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:17 [INF] Received HTTP response headers after 19.7248ms - 200
+2026-05-09 11:40:17 [INF] End processing HTTP request after 20.1566ms - 200
+2026-05-09 11:40:17 [INF] Executing endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:17 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(SecureAPIGateway.Models.LoginRequest) on controller SecureAPIGateway.Controllers.AuthController (SecureAPIGateway).
+2026-05-09 11:40:17 [WRN] [Auth] Failed login attempt for user: ams
+2026-05-09 11:40:17 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-09 11:40:17 [INF] Executed action SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway) in 0.3785ms
+2026-05-09 11:40:17 [INF] Executed endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:17 [WRN] [Gateway] 127.0.0.1 POST /api/Auth/login → 401 (21.349ms)
+2026-05-09 11:40:17 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Auth/login - 401 null application/json; charset=utf-8 21.8073ms
+2026-05-09 11:40:18 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Auth/login - application/json 45
+2026-05-09 11:40:18 [INF] Start processing HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:18 [INF] Sending HTTP request POST http://localhost:5001/api/analyze
+2026-05-09 11:40:18 [INF] Received HTTP response headers after 17.6727ms - 200
+2026-05-09 11:40:18 [INF] End processing HTTP request after 17.98ms - 200
+2026-05-09 11:40:18 [INF] Executing endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:18 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(SecureAPIGateway.Models.LoginRequest) on controller SecureAPIGateway.Controllers.AuthController (SecureAPIGateway).
+2026-05-09 11:40:18 [WRN] [Auth] Failed login attempt for user: ams
+2026-05-09 11:40:18 [INF] Executing UnauthorizedObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-09 11:40:18 [INF] Executed action SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway) in 0.368ms
+2026-05-09 11:40:18 [INF] Executed endpoint 'SecureAPIGateway.Controllers.AuthController.Login (SecureAPIGateway)'
+2026-05-09 11:40:18 [WRN] [Gateway] 127.0.0.1 POST /api/Auth/login → 401 (18.992ms)
+2026-05-09 11:40:18 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Auth/login - 401 null application/json; charset=utf-8 19.3449ms
+2026-05-09 13:06:30 [INF] Application is shutting down...

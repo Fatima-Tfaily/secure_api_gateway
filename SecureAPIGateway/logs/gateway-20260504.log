@@ -1,0 +1,7 @@
+2026-05-04 22:21:45 [INF] Secure API Gateway running on port 8080. Swagger: /swagger
+2026-05-04 22:21:45 [INF] User profile is available. Using 'C:\Users\USER\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-05-04 22:21:45 [INF] Now listening on: http://0.0.0.0:8080
+2026-05-04 22:21:45 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-04 22:21:45 [INF] Hosting environment: Development
+2026-05-04 22:21:45 [INF] Content root path: C:\Users\USER\Downloads\SecureAPIGatway\SecureAPIGatway\SecureAPIGateway
+2026-05-04 22:23:29 [INF] Application is shutting down...
