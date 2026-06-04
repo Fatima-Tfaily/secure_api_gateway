@@ -20,7 +20,7 @@ public class RateLimitingMiddleware
     public RateLimitingMiddleware(RequestDelegate next, IConfiguration configuration)
     {
         _next = next;
-        _maxRequests = configuration.GetValue<int>("RateLimitSettings:MaxRequestsPerWindow", 5);
+        _maxRequests = configuration.GetValue<int>("RateLimitSettings:MaxRequestsPerWindow", 100);
         var windowSeconds = configuration.GetValue<int>("RateLimitSettings:WindowSeconds", 60);
         _window = TimeSpan.FromSeconds(windowSeconds);
     }
