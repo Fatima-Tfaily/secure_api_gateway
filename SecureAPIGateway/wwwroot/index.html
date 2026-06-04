@@ -14,7 +14,6 @@
             --accent2: #0066ff;
             --danger: #ff4d6d;
             --warning: #ffb703;
-            --patch: #a855f7;
             --text: #f0f4ff;
             --text2: #8892a4;
             --border: rgba(255,255,255,0.08);
@@ -203,7 +202,6 @@
         .method-btn.active-get    { background: rgba(0,212,170,0.15);  border-color: var(--accent);  color: var(--accent);  }
         .method-btn.active-post   { background: rgba(0,102,255,0.15);  border-color: var(--accent2); color: var(--accent2); }
         .method-btn.active-put    { background: rgba(255,183,3,0.15);  border-color: var(--warning); color: var(--warning); }
-        .method-btn.active-patch  { background: rgba(168,85,247,0.15); border-color: var(--patch);   color: var(--patch);   }
         .method-btn.active-delete { background: rgba(255,77,109,0.15); border-color: var(--danger);  color: var(--danger);  }
 
         .path-row { display: flex; gap: 0.5rem; margin-bottom: 0.75rem; }
@@ -297,7 +295,7 @@
         .qm-get    { background: rgba(0,212,170,0.15);  color: var(--accent);  }
         .qm-post   { background: rgba(0,102,255,0.15);  color: var(--accent2); }
         .qm-put    { background: rgba(255,183,3,0.15);  color: var(--warning); }
-        .qm-patch  { background: rgba(168,85,247,0.15); color: var(--patch);   }
+        
         .qm-delete { background: rgba(255,77,109,0.15); color: var(--danger);  }
 
         /* ── LOG ── */
@@ -456,17 +454,12 @@
                     <button class="method-btn active-get"    id="btn-GET"    onclick="setMethod('GET',this)">GET</button>
                     <button class="method-btn"               id="btn-POST"   onclick="setMethod('POST',this)">POST</button>
                     <button class="method-btn"               id="btn-PUT"    onclick="setMethod('PUT',this)">PUT</button>
-                    <button class="method-btn"               id="btn-PATCH"  onclick="setMethod('PATCH',this)">PATCH</button>
+                    
                     <button class="method-btn"               id="btn-DELETE" onclick="setMethod('DELETE',this)">DELETE</button>
                 </div>
 
-                <!-- Path -->
-                <div class="path-row">
-                    <input type="text" id="pathInput" value="/api/Gateway" placeholder="/api/Gateway" />
-                    <button class="btn-send" onclick="sendRequest()">Send ▶</button>
-                </div>
-
-                <!-- Body editor (shown for POST / PUT / PATCH) -->
+                
+                <!-- Body editor (shown for POST / PUT) -->
                 <div class="body-editor-wrap" id="bodyWrap">
                     <div class="body-editor-header">
                         <span class="body-editor-label">Request Body (JSON)</span>
@@ -487,7 +480,7 @@
                     <div class="legend-item"><div class="legend-dot" style="background:var(--accent2)"></div> JWT Auth</div>
                     <div class="legend-item"><div class="legend-dot" style="background:var(--warning)"></div> Rate Limiting</div>
                     <div class="legend-item"><div class="legend-dot" style="background:var(--danger)"></div> Input Validation</div>
-                    <div class="legend-item"><div class="legend-dot" style="background:var(--patch)"></div> AI Detection</div>
+                    
                 </div>
             </div>
 
@@ -536,7 +529,7 @@ const QUICK_TESTS = [
   { icon:'✅', label:'GET Gateway (auth)', desc:'GET /api/Gateway — valid JWT', method:'GET', path:'/api/Gateway', body:null, tag:'success' },
   { icon:'✅', label:'POST Gateway (auth)', desc:'POST /api/Gateway with body', method:'POST', path:'/api/Gateway', body:'{"action":"ping","value":42}', tag:'success' },
   { icon:'✅', label:'PUT Gateway (auth)', desc:'PUT /api/Gateway — update request', method:'PUT', path:'/api/Gateway', body:'{"id":1,"status":"updated"}', tag:'success' },
-  { icon:'✅', label:'PATCH Gateway (auth)', desc:'PATCH /api/Gateway — partial update', method:'PATCH', path:'/api/Gateway', body:'{"status":"active"}', tag:'success' },
+  
   { icon:'✅', label:'DELETE Gateway (auth)', desc:'DELETE /api/Gateway — delete request', method:'DELETE', path:'/api/Gateway', body:null, tag:'success' },
 
   // ── SECURITY ──
@@ -700,14 +693,12 @@ function setMethod(m, el) {
   el.classList.add(`active-${m.toLowerCase()}`);
 
   // Show body editor for methods that send a body
-  const hasBody = ['POST','PUT','PATCH'].includes(m);
+  const hasBody = ['POST','PUT'].includes(m);
   const editor = document.getElementById('bodyEditor');
   if (hasBody) {
     editor.classList.add('visible');
     if (!editor.value) {
-      editor.value = m === 'PATCH'
-        ? '{\n  "field": "value"\n}'
-        : '{\n  "key": "value"\n}';
+        editor.value = '{\n  "key": "value"\n}';
       validateJson();
     }
   } else {
@@ -761,7 +752,7 @@ async function sendRequest(overrideToken) {
   const headers = { 'Content-Type': 'application/json' };
   if (useToken) headers['Authorization'] = `Bearer ${useToken}`;
 
-  const hasBody = ['POST','PUT','PATCH'].includes(currentMethod);
+  const hasBody = ['POST','PUT'].includes(currentMethod);
   const bodyVal = document.getElementById('bodyEditor').value.trim();
   const body = hasBody && bodyVal ? bodyVal : undefined;
 
@@ -810,7 +801,7 @@ function addLog(method, path, status, ms) {
 function renderLog() {
   const el = document.getElementById('logList');
   if (!logs.length) { el.innerHTML = '<div class="empty-log">No requests yet</div>'; return; }
-  const mc = { GET:'var(--accent)', POST:'var(--accent2)', PUT:'var(--warning)', PATCH:'var(--patch)', DELETE:'var(--danger)' };
+  const mc = { GET:'var(--accent)', POST:'var(--accent2)', PUT:'var(--warning)', DELETE:'var(--danger)' };
   el.innerHTML = logs.map(l => `
     <div class="log-item">
       <span class="log-method" style="color:${mc[l.method]||'var(--text)'}">${l.method}</span>
